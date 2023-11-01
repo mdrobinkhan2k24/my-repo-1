@@ -1,0 +1,742 @@
+<!DOCTYPE html>
+<html class="no-js" lang="zxx">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>Widox - Product-list</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Place favicon.ico in the root directory -->
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="assets/img/logo/main-logo.png"
+    />
+
+    <!-- CSS here -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/animate.css" />
+    <link rel="stylesheet" href="assets/css/swiper-bundle.css" />
+    <link rel="stylesheet" href="assets/css/slick.css" />
+    <link rel="stylesheet" href="assets/css/magnific-popup.css" />
+    <link rel="stylesheet" href="assets/css/font-awesome-pro.css" />
+    <link rel="stylesheet" href="assets/css/flaticon_shofy.css" />
+    <link rel="stylesheet" href="assets/css/spacing.css" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+  </head>
+  <body>
+      <!-- pre loader area start -->
+      <div id="loading">
+        <div id="loading-center">
+            <div id="loading-center-absolute">
+              <!-- loading content here -->
+              <div class="tp-preloader-content">
+                  <div class="tp-preloader-logo">
+                    <div class="tp-preloader-circle">
+                        <svg width="190" height="190" viewBox="0 0 380 380" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <circle stroke="#D9D9D9" cx="190" cy="190" r="180" stroke-width="6" stroke-linecap="round">
+                          </circle>
+                          <circle stroke="red" cx="190" cy="190" r="180" stroke-width="6" stroke-linecap="round"></circle>
+                        </svg>
+                    </div>
+                    <img src="assets/img/logo/preloader/preloader-icon.png" alt="">
+                  </div>
+                  <p class="tp-preloader-subtitle">Loading...</p>
+              </div>
+            </div>
+        </div>
+      </div>
+      <!-- pre loader area end -->
+
+      <!-- back to top Start  -->
+      <div class="back-to-top-wrapper">
+        <button id="back_to_top" type="button" class="back-to-top-btn">
+            <svg width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M11 6L6 1L1 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+            </svg>               
+        </button>
+      </div>
+      <!-- back to top Start  -->
+
+      <!-- offcanvas area start -->
+      <div class="offcanvas__area">
+        <div class="offcanvas__wrapper">
+          <div class="offcanvas__close">
+              <button class="offcanvas__close-btn offcanvas-close-btn">
+                <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M11 1L1 11" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M1 1L11 11" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </button>
+          </div>
+          <div class="offcanvas__content">
+              <div class="offcanvas__top mb-70 d-flex justify-content-between align-items-center">
+                <div class="offcanvas__logo logo">
+                    <a href="index.html">
+                      <img src="assets/img/logo/main-logo.png" alt="logo">
+                    </a>
+                </div>
+              </div>
+              <div class="tp-main-menu-mobile"></div>
+              <div class="offcanvas__btn mt-20 mb-30">
+                <a href="contact.html" class="tp-btn">Getting Started 
+                  <i class="fa-regular fa-chevron-right"></i>
+                </a>
+              </div>
+              <div class="side-info-contact mb-10">
+                <span>we are here</span>
+                <p>New South Head
+                <br>Rd, Double Bay<br>NSW 2028, New York</p>
+              </div>
+              <div class="side-info-social tp-footer-widget__social">
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-pinterest-p"></i></a>
+                <a href="#"><i class="fa-solid fa-paper-plane"></i></a>
+              </div>
+          </div>
+        </div>
+      </div>
+      <div class="body-overlay"></div>
+      <!-- offcanvas area end -->
+      
+    <!--  Header Area-->
+    <header>
+        <div class="header__area">
+          <div id="header-sticky" class="header__menu-wrap">
+            <div class="container-fluid">
+              <div class="row align-items-center">
+                <div class="col-xxl-3 col-xl-3 col-lg-2 col-md-6 col-sm-6 d-flex align-items-center">
+                  <div class="tp-menu__bar d-md-none d-xl-inline-block">
+                    <div class="tp-menu__content d-sm-block offcanvas-open-btn">
+                      <a href="#">
+                        <svg width="19" height="12" viewBox="0 0 19 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <rect width="19" height="1.5" fill="currentColor"></rect>
+                          <rect y="5" width="19" height="1.5" fill="currentColor"></rect>
+                          <rect y="10" width="19" height="1.5" fill="currentColor"></rect>
+                          </svg>
+                      </a>
+                      <span>Menu</span>
+                    </div>
+                  </div>
+                  <div class="tp-main__logo tp-main__logo-2 ml-20">
+                    <a href="index.html">
+                      <img src="assets/img/logo/main-logo.png" alt="">
+                    </a>
+                  </div>
+                </div>
+                <div class="col-xxl-6 col-xl-6 col-lg-7 col-md-6 d-sm-none d-lg-block">
+                  <div class="main-menu main-menu-2 menu-position d-md-none d-lg-inline-block">
+                    <nav id="mobile-menu" class="tp-main-menu-content" style="display: block;">
+                      <ul>
+                        <li class="has-dropdown tp-header-box"><a href="#">Home</a>
+                          <div class="tp-submenu has-homemenu">
+                            <div class="row gx-6 row-cols-1 row-cols-md-2 row-cols-xl-3">
+                              <div class="col homemenu active">
+                                <div class="homemenu-thumb">
+                                  <img src="assets/img/menu/home-1.jpg" alt="">
+                                </div>
+                                <div class="homemenu-btn">
+                                  <a class="tp-btn menu-btn mb-5" href="index.html">Multi Page</a>
+                                  <a class="tp-btn menu-btn" href="index-one-page.html">One Page</a>
+                               </div>
+                               <div class="demo-name text-center">
+                                <span>Home 01</span>
+                               </div>
+                              </div>
+                              <div class="col homemenu active">
+                                <div class="homemenu-thumb">
+                                  <img src="assets/img/menu/home-1.jpg" alt="">
+                                </div>
+                                <div class="homemenu-btn">
+                                  <a class="tp-btn menu-btn mb-5" href="index-2.html">Multi Page</a>
+                                  <a class="tp-btn menu-btn" href="index-one-page.html">One Page</a>
+                               </div>
+                               <div class="demo-name text-center">
+                                <span>Home 02</span>
+                               </div>
+                              </div>
+                              <div class="col homemenu active">
+                                <div class="homemenu-thumb">
+                                  <img src="assets/img/menu/home-1.jpg" alt="">
+                                </div>
+                                <div class="homemenu-btn">
+                                  <a class="tp-btn menu-btn mb-5" href="index-3.html">Multi Page</a>
+                                  <a class="tp-btn menu-btn" href="index-one-page.html">One Page</a>
+                               </div>
+                               <div class="demo-name text-center">
+                                <span>Home 03</span>
+                               </div>
+                              </div>
+                            </div>
+                          </div>
+                        </li>
+                        <li class="has-dropdown">
+                          <a href="#">pages</a>
+                          <ul class="tp-submenu">
+                            <li><a href="index-2.html">Home-2</a></li>
+                            <li><a href="index-3.html">Home-3</a></li>
+                            <li><a href="#">Home-4</a></li>
+                            <li><a href="#">Home-5</a></li>
+                            <li><a href="#">Home-6</a></li>
+                          </ul>
+                        </li>
+                        <li><a href="#">services</a></li>
+                        <li><a href="#">Portfolio</a></li>
+                        <li><a href="#">news</a></li>
+                        <li><a href="#">contact</a></li>
+                      </ul>
+                    </nav>
+                  </div>
+                </div>
+                <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-6 col-sm-6">
+                  <div class="tp-header__menu-right d-flex justify-content-end align-items-center">
+                    <div class="tp-header__shop">
+                      <ul>
+                        <li><a href="javascript:void(0);" class="tp-header__search d-md-block"><i class="fa-sharp fa-regular fa-magnifying-glass"></i></a></li>
+                        <li><a href="#" class="tp-header__shop-icon d-lg-none d-xxl-block">Cart <span>0</span></a></li>
+                      </ul>
+                    </div>
+                    <div class="tp-header__right-btn d-flex align-items-center">
+                      <a href="#" class="gray-btn d-sm-none d-lg-inline-block">Get quate now</a>
+                      <div class="tp-menu__content tp-mobile-bars offcanvas-btn">
+                        <button class="offcanvas-open-btn d-md-block d-lg-none">
+                         <i class="fa-solid fa-bars-staggered"></i>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        </div>
+    </header>
+    <!--  End Header Area-->
+
+    <main>
+      <!--  start BreadCumb Area-->
+      <section class="tp-breadcrumb-area grey-bg pt-110 pb-110">
+        <div class="container">
+          <div class="row">
+            <div class="col-xl-12">
+              <div class="tp-breadcrumb text-center">
+                <div class="tp-breadcrumb__list">
+                  <span><a href="home">Home</a></span>
+                  <span>\ Product List</span>
+              </div>
+                <h2 class="tp-breadcrumb__title">Product List</h2>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--  End BreadCumb Area-->
+
+      <!-- start News inner  area  -->
+      <section class="tp-product-list-area pt-120 pb-80">
+        <div class="container">
+          <div class="row">
+            <div class="col-xxl-8 col-xl-8 col-lg-7">
+              <div class="tp-shop-top">
+                <div class="row align-items-center">
+                  <div class="col-xl-6 col-lg-6 col-md-6">
+                    <div class="tp-product-text">
+                      <h4>Showing 1–12 of <span>54</span> results</h4>
+                    </div>
+                  </div>
+                  <div class="col-xl-6 col-lg-6 col-md-6">
+                    <div class="tp-product-filter mb-60">
+                      <select class="d-none">
+                        <option>Default Sorting</option>
+                        <option>Low to Hight</option>
+                        <option>High to Low</option>
+                        <option>New Added</option>
+                        <option>On Sale</option>
+                    </select>
+                    <div class="nice-select" tabindex="0">
+                      <span class="current">Recently Added</span>
+                      <ul class="list">
+                        <li data-value="Default Sorting" class="option selected focus">Recently Added</li>
+                        <li data-value="Low to Hight" class="option">Low to Hight</li>
+                        <li data-value="High to Low" class="option">High to Low</li>
+                        <li data-value="New Added" class="option">New Added</li>
+                        <li data-value="On Sale" class="option">On Sale</li>
+                      </ul>
+                    </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-xl-6 col-lg-6 col-md-6">
+                    <div class="tp-product-content p-relative mb-40">
+                      <div class="tp-product__thumb p-relative mb-25">
+                        <a href="#">
+                          <img class="image-1" src="assets/img/product/img-1.jpg" alt="">
+                          <img class="image-2" src="assets/img/product/img-2.jpg" alt="">
+                        </a>
+                        <div class="tp-portfolio__action">
+                          <a href="#">Add to Cart</a>
+                        </div>
+                      </div>
+                      <div class="tp-product__action">
+                        <button>
+                            <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M16.892 8.16945C16.7401 7.96169 13.1215 3.08252 8.49992 3.08252C3.87833 3.08252 0.259582 7.96169 0.107877 8.16925C-0.035959 8.36634 -0.035959 8.63366 0.107877 8.83076C0.259582 9.03851 3.87833 13.9177 8.49992 13.9177C13.1215 13.9177 16.7401 9.03847 16.892 8.83092C17.036 8.63386 17.036 8.36634 16.892 8.16945ZM8.49992 12.7968C5.09563 12.7968 2.14715 9.5584 1.27434 8.49972C2.14602 7.44011 5.08832 4.20339 8.49992 4.20339C11.904 4.20339 14.8523 7.44123 15.7255 8.50048C14.8538 9.56006 11.9115 12.7968 8.49992 12.7968Z" fill="currentColor"></path>
+                            <path d="M8.50035 5.13721C6.64622 5.13721 5.1377 6.64573 5.1377 8.49986C5.1377 10.354 6.64622 11.8625 8.50035 11.8625C10.3545 11.8625 11.863 10.354 11.863 8.49986C11.863 6.64573 10.3545 5.13721 8.50035 5.13721ZM8.50035 10.7416C7.26419 10.7416 6.2586 9.73598 6.2586 8.49986C6.2586 7.26374 7.26423 6.25811 8.50035 6.25811C9.73647 6.25811 10.7421 7.26374 10.7421 8.49986C10.7421 9.73598 9.7365 10.7416 8.50035 10.7416Z" fill="currentColor"></path>
+                            </svg>
+                            <span class="tp-product__tooltip tp-product__tooltip-right p-relative">Quick View</span>
+                        </button>
+                        <button>
+                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M13.2073 16.7012C12.9938 16.7014 12.7835 16.6492 12.5948 16.5493L9.08871 14.7066C9.06154 14.6921 9.03121 14.6845 9.0004 14.6845C8.96959 14.6845 8.93925 14.6921 8.91208 14.7066L5.40659 16.5493C5.18935 16.6637 4.94446 16.7149 4.69962 16.6973C4.45478 16.6796 4.21977 16.5938 4.02117 16.4495C3.82257 16.3052 3.66832 16.1082 3.57587 15.8808C3.48341 15.6534 3.45645 15.4047 3.49802 15.1628L4.1674 11.2596C4.17254 11.229 4.1701 11.1976 4.1603 11.1682C4.15049 11.1388 4.13361 11.1122 4.11115 11.0908L1.27727 8.32503C1.10133 8.15361 0.976905 7.93634 0.918109 7.69783C0.859313 7.45932 0.868493 7.20912 0.944609 6.97556C1.02072 6.742 1.16073 6.53443 1.34877 6.37636C1.53681 6.2183 1.76536 6.11606 2.00852 6.08122L5.92521 5.51254C5.95569 5.5081 5.98462 5.49631 6.00952 5.47818C6.03441 5.46004 6.05451 5.43612 6.06809 5.40847L7.81915 1.85629C7.92761 1.63608 8.09556 1.45064 8.30398 1.32096C8.5124 1.19129 8.75296 1.12256 8.99843 1.12256C9.2439 1.12256 9.48446 1.19129 9.69288 1.32096C9.9013 1.45064 10.0693 1.63608 10.1777 1.85629L11.9299 5.40735C11.9436 5.43491 11.9637 5.45876 11.9886 5.47687C12.0135 5.49499 12.0423 5.50684 12.0728 5.51141L15.9928 6.08066C16.2359 6.11569 16.4643 6.21804 16.6522 6.37613C16.8401 6.53422 16.98 6.74174 17.0561 6.97522C17.1322 7.20869 17.1414 7.4588 17.0827 7.69724C17.024 7.93569 16.8998 8.15296 16.7241 8.32447L13.8874 11.0886C13.865 11.11 13.8482 11.1366 13.8384 11.166C13.8286 11.1954 13.8261 11.2268 13.8311 11.2573L14.5005 15.1605C14.5327 15.3491 14.5234 15.5425 14.4733 15.7271C14.4232 15.9118 14.3334 16.0833 14.2103 16.2297C14.0872 16.3761 13.9336 16.494 13.7603 16.575C13.587 16.656 13.3981 16.6983 13.2068 16.699L13.2073 16.7012ZM9.0004 13.5591C9.21373 13.559 9.42384 13.6112 9.6124 13.711L13.1179 15.5532C13.1489 15.5709 13.1845 15.579 13.2202 15.5765C13.2558 15.574 13.2899 15.561 13.3181 15.5391C13.3476 15.5189 13.3705 15.4905 13.384 15.4574C13.3975 15.4243 13.401 15.388 13.3941 15.3529L12.7241 11.4492C12.6884 11.2391 12.7041 11.0234 12.7699 10.8207C12.8357 10.618 12.9497 10.4343 13.1021 10.2853L15.9388 7.52066C15.9642 7.49586 15.982 7.46448 15.9905 7.43005C15.9989 7.39562 15.9976 7.35952 15.9866 7.32583C15.9756 7.29213 15.9554 7.26218 15.9282 7.23936C15.9011 7.21653 15.8682 7.20174 15.8331 7.19666L11.9136 6.62685C11.7026 6.59629 11.5022 6.51482 11.3297 6.38948C11.1572 6.26413 11.0178 6.09868 10.9236 5.90741L9.16915 2.35579C9.15343 2.324 9.12915 2.29724 9.09903 2.27854C9.06891 2.25983 9.03416 2.24991 8.99871 2.24991C8.96325 2.24991 8.9285 2.25983 8.89839 2.27854C8.86827 2.29724 8.84398 2.324 8.82827 2.35579L7.07721 5.90628C6.98293 6.09762 6.84347 6.26312 6.67088 6.38847C6.49829 6.51382 6.29777 6.59525 6.08665 6.62572L2.16771 7.19666C2.13256 7.20163 2.09951 7.21637 2.07233 7.23921C2.04515 7.26204 2.02492 7.29205 2.01396 7.32582C2.003 7.35958 2.00174 7.39575 2.01033 7.4302C2.01891 7.46464 2.037 7.49599 2.06252 7.52066L4.89865 10.2853C5.05106 10.4343 5.16507 10.618 5.2309 10.8207C5.29674 11.0234 5.31244 11.2391 5.27665 11.4492L4.60671 15.3529C4.60063 15.388 4.60452 15.4241 4.61794 15.457C4.63135 15.49 4.65375 15.5185 4.68259 15.5394C4.71143 15.5603 4.74554 15.5726 4.78106 15.5751C4.81657 15.5775 4.85205 15.5699 4.88346 15.5532L8.3884 13.7104C8.57709 13.611 8.78714 13.5591 9.0004 13.5591Z" fill="currentColor"></path>
+                            </svg>
+                            <span class="tp-product__tooltip tp-product__tooltip-right p-relative">Rattings</span>                      
+                        </button>
+                        <button>
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M6.86634 10.2L5.33301 11.7333V2.66667C5.33301 2.26667 5.06634 2 4.66634 2C4.26634 2 3.99967 2.26667 3.99967 2.66667V11.7333L2.46634 10.2C2.19967 9.93333 1.79967 9.93333 1.53301 10.2C1.26634 10.4667 1.26634 10.8667 1.53301 11.1333L4.19967 13.8C4.26634 13.8667 4.33301 13.9333 4.39967 13.9333C4.46634 14 4.59967 14 4.66634 14C4.73301 14 4.86634 14 4.93301 13.9333C4.99967 13.9333 5.06634 13.8667 5.13301 13.8L7.79967 11.1333C8.06634 10.8667 8.06634 10.4667 7.79967 10.2C7.53301 9.93333 7.13301 9.93333 6.86634 10.2ZM14.4663 4.86667L11.7997 2.2C11.733 2.13333 11.6663 2.06667 11.5997 2.06667C11.533 2 11.3997 2 11.333 2C11.2663 2 11.133 2 11.0663 2.06667C10.9997 2.06667 10.933 2.13333 10.8663 2.2L8.19967 4.86667C7.93301 5.13333 7.93301 5.53333 8.19967 5.8C8.46634 6.06667 8.86634 6.06667 9.13301 5.8L10.6663 4.26667V13.3333C10.6663 13.7333 10.933 14 11.333 14C11.733 14 11.9997 13.7333 11.9997 13.3333V4.26667L13.533 5.8C13.7997 6.06667 14.1997 6.06667 14.4663 5.8C14.733 5.53333 14.733 5.13333 14.4663 4.86667Z" fill="currentColor"></path>
+                            </svg>
+                            <span class="tp-product__tooltip tp-product__tooltip-right p-relative">Add To Compare</span>                    
+                        </button>
+                      </div>
+                      <div class="tp-product__text text-center">
+                        <h4 class="product-title"><a href="#" class="product-name hov-animi">Solid Wooden Door</a></h4>
+                        <span>$2362.00</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-xl-6 col-lg-6 col-md-6">
+                    <div class="tp-product-content p-relative mb-40">
+                      <div class="tp-product__thumb p-relative mb-25">
+                        <a href="#">
+                          <img class="image-1" src="assets/img/product/img-2.jpg" alt="">
+                          <img class="image-2" src="assets/img/product/img-3.jpg" alt="">
+                        </a>
+                        <div class="tp-portfolio__action">
+                          <a href="#">Add to Cart</a>
+                        </div>
+                      </div>
+                      <div class="tp-product__action">
+                        <button>
+                            <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M16.892 8.16945C16.7401 7.96169 13.1215 3.08252 8.49992 3.08252C3.87833 3.08252 0.259582 7.96169 0.107877 8.16925C-0.035959 8.36634 -0.035959 8.63366 0.107877 8.83076C0.259582 9.03851 3.87833 13.9177 8.49992 13.9177C13.1215 13.9177 16.7401 9.03847 16.892 8.83092C17.036 8.63386 17.036 8.36634 16.892 8.16945ZM8.49992 12.7968C5.09563 12.7968 2.14715 9.5584 1.27434 8.49972C2.14602 7.44011 5.08832 4.20339 8.49992 4.20339C11.904 4.20339 14.8523 7.44123 15.7255 8.50048C14.8538 9.56006 11.9115 12.7968 8.49992 12.7968Z" fill="currentColor"></path>
+                            <path d="M8.50035 5.13721C6.64622 5.13721 5.1377 6.64573 5.1377 8.49986C5.1377 10.354 6.64622 11.8625 8.50035 11.8625C10.3545 11.8625 11.863 10.354 11.863 8.49986C11.863 6.64573 10.3545 5.13721 8.50035 5.13721ZM8.50035 10.7416C7.26419 10.7416 6.2586 9.73598 6.2586 8.49986C6.2586 7.26374 7.26423 6.25811 8.50035 6.25811C9.73647 6.25811 10.7421 7.26374 10.7421 8.49986C10.7421 9.73598 9.7365 10.7416 8.50035 10.7416Z" fill="currentColor"></path>
+                            </svg>
+                            <span class="tp-product__tooltip tp-product__tooltip-right p-relative">Quick View</span>
+                        </button>
+                        <button>
+                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M13.2073 16.7012C12.9938 16.7014 12.7835 16.6492 12.5948 16.5493L9.08871 14.7066C9.06154 14.6921 9.03121 14.6845 9.0004 14.6845C8.96959 14.6845 8.93925 14.6921 8.91208 14.7066L5.40659 16.5493C5.18935 16.6637 4.94446 16.7149 4.69962 16.6973C4.45478 16.6796 4.21977 16.5938 4.02117 16.4495C3.82257 16.3052 3.66832 16.1082 3.57587 15.8808C3.48341 15.6534 3.45645 15.4047 3.49802 15.1628L4.1674 11.2596C4.17254 11.229 4.1701 11.1976 4.1603 11.1682C4.15049 11.1388 4.13361 11.1122 4.11115 11.0908L1.27727 8.32503C1.10133 8.15361 0.976905 7.93634 0.918109 7.69783C0.859313 7.45932 0.868493 7.20912 0.944609 6.97556C1.02072 6.742 1.16073 6.53443 1.34877 6.37636C1.53681 6.2183 1.76536 6.11606 2.00852 6.08122L5.92521 5.51254C5.95569 5.5081 5.98462 5.49631 6.00952 5.47818C6.03441 5.46004 6.05451 5.43612 6.06809 5.40847L7.81915 1.85629C7.92761 1.63608 8.09556 1.45064 8.30398 1.32096C8.5124 1.19129 8.75296 1.12256 8.99843 1.12256C9.2439 1.12256 9.48446 1.19129 9.69288 1.32096C9.9013 1.45064 10.0693 1.63608 10.1777 1.85629L11.9299 5.40735C11.9436 5.43491 11.9637 5.45876 11.9886 5.47687C12.0135 5.49499 12.0423 5.50684 12.0728 5.51141L15.9928 6.08066C16.2359 6.11569 16.4643 6.21804 16.6522 6.37613C16.8401 6.53422 16.98 6.74174 17.0561 6.97522C17.1322 7.20869 17.1414 7.4588 17.0827 7.69724C17.024 7.93569 16.8998 8.15296 16.7241 8.32447L13.8874 11.0886C13.865 11.11 13.8482 11.1366 13.8384 11.166C13.8286 11.1954 13.8261 11.2268 13.8311 11.2573L14.5005 15.1605C14.5327 15.3491 14.5234 15.5425 14.4733 15.7271C14.4232 15.9118 14.3334 16.0833 14.2103 16.2297C14.0872 16.3761 13.9336 16.494 13.7603 16.575C13.587 16.656 13.3981 16.6983 13.2068 16.699L13.2073 16.7012ZM9.0004 13.5591C9.21373 13.559 9.42384 13.6112 9.6124 13.711L13.1179 15.5532C13.1489 15.5709 13.1845 15.579 13.2202 15.5765C13.2558 15.574 13.2899 15.561 13.3181 15.5391C13.3476 15.5189 13.3705 15.4905 13.384 15.4574C13.3975 15.4243 13.401 15.388 13.3941 15.3529L12.7241 11.4492C12.6884 11.2391 12.7041 11.0234 12.7699 10.8207C12.8357 10.618 12.9497 10.4343 13.1021 10.2853L15.9388 7.52066C15.9642 7.49586 15.982 7.46448 15.9905 7.43005C15.9989 7.39562 15.9976 7.35952 15.9866 7.32583C15.9756 7.29213 15.9554 7.26218 15.9282 7.23936C15.9011 7.21653 15.8682 7.20174 15.8331 7.19666L11.9136 6.62685C11.7026 6.59629 11.5022 6.51482 11.3297 6.38948C11.1572 6.26413 11.0178 6.09868 10.9236 5.90741L9.16915 2.35579C9.15343 2.324 9.12915 2.29724 9.09903 2.27854C9.06891 2.25983 9.03416 2.24991 8.99871 2.24991C8.96325 2.24991 8.9285 2.25983 8.89839 2.27854C8.86827 2.29724 8.84398 2.324 8.82827 2.35579L7.07721 5.90628C6.98293 6.09762 6.84347 6.26312 6.67088 6.38847C6.49829 6.51382 6.29777 6.59525 6.08665 6.62572L2.16771 7.19666C2.13256 7.20163 2.09951 7.21637 2.07233 7.23921C2.04515 7.26204 2.02492 7.29205 2.01396 7.32582C2.003 7.35958 2.00174 7.39575 2.01033 7.4302C2.01891 7.46464 2.037 7.49599 2.06252 7.52066L4.89865 10.2853C5.05106 10.4343 5.16507 10.618 5.2309 10.8207C5.29674 11.0234 5.31244 11.2391 5.27665 11.4492L4.60671 15.3529C4.60063 15.388 4.60452 15.4241 4.61794 15.457C4.63135 15.49 4.65375 15.5185 4.68259 15.5394C4.71143 15.5603 4.74554 15.5726 4.78106 15.5751C4.81657 15.5775 4.85205 15.5699 4.88346 15.5532L8.3884 13.7104C8.57709 13.611 8.78714 13.5591 9.0004 13.5591Z" fill="currentColor"></path>
+                            </svg>
+                            <span class="tp-product__tooltip tp-product__tooltip-right p-relative">Rattings</span>                      
+                        </button>
+                        <button>
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M6.86634 10.2L5.33301 11.7333V2.66667C5.33301 2.26667 5.06634 2 4.66634 2C4.26634 2 3.99967 2.26667 3.99967 2.66667V11.7333L2.46634 10.2C2.19967 9.93333 1.79967 9.93333 1.53301 10.2C1.26634 10.4667 1.26634 10.8667 1.53301 11.1333L4.19967 13.8C4.26634 13.8667 4.33301 13.9333 4.39967 13.9333C4.46634 14 4.59967 14 4.66634 14C4.73301 14 4.86634 14 4.93301 13.9333C4.99967 13.9333 5.06634 13.8667 5.13301 13.8L7.79967 11.1333C8.06634 10.8667 8.06634 10.4667 7.79967 10.2C7.53301 9.93333 7.13301 9.93333 6.86634 10.2ZM14.4663 4.86667L11.7997 2.2C11.733 2.13333 11.6663 2.06667 11.5997 2.06667C11.533 2 11.3997 2 11.333 2C11.2663 2 11.133 2 11.0663 2.06667C10.9997 2.06667 10.933 2.13333 10.8663 2.2L8.19967 4.86667C7.93301 5.13333 7.93301 5.53333 8.19967 5.8C8.46634 6.06667 8.86634 6.06667 9.13301 5.8L10.6663 4.26667V13.3333C10.6663 13.7333 10.933 14 11.333 14C11.733 14 11.9997 13.7333 11.9997 13.3333V4.26667L13.533 5.8C13.7997 6.06667 14.1997 6.06667 14.4663 5.8C14.733 5.53333 14.733 5.13333 14.4663 4.86667Z" fill="currentColor"></path>
+                            </svg>
+                            <span class="tp-product__tooltip tp-product__tooltip-right p-relative">Add To Compare</span>                    
+                        </button>
+                      </div>
+                      <div class="tp-product__text text-center">
+                        <h4 class="product-title"><a href="#" class="product-name hov-animi">Solid Wooden Glass Door</a></h4>
+                        <span>$2362.00</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-xl-6 col-lg-6 col-md-6">
+                    <div class="tp-product-content p-relative mb-40">
+                      <div class="tp-product__thumb p-relative mb-25">
+                        <a href="#">
+                          <img class="image-1" src="assets/img/product/img-3.jpg" alt="">
+                          <img class="image-2" src="assets/img/product/img-4.jpg" alt="">
+                        </a>
+                        <div class="tp-portfolio__action">
+                          <a href="#">Add to Cart</a>
+                        </div>
+                      </div>
+                      <div class="tp-product__action">
+                        <button>
+                            <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M16.892 8.16945C16.7401 7.96169 13.1215 3.08252 8.49992 3.08252C3.87833 3.08252 0.259582 7.96169 0.107877 8.16925C-0.035959 8.36634 -0.035959 8.63366 0.107877 8.83076C0.259582 9.03851 3.87833 13.9177 8.49992 13.9177C13.1215 13.9177 16.7401 9.03847 16.892 8.83092C17.036 8.63386 17.036 8.36634 16.892 8.16945ZM8.49992 12.7968C5.09563 12.7968 2.14715 9.5584 1.27434 8.49972C2.14602 7.44011 5.08832 4.20339 8.49992 4.20339C11.904 4.20339 14.8523 7.44123 15.7255 8.50048C14.8538 9.56006 11.9115 12.7968 8.49992 12.7968Z" fill="currentColor"></path>
+                            <path d="M8.50035 5.13721C6.64622 5.13721 5.1377 6.64573 5.1377 8.49986C5.1377 10.354 6.64622 11.8625 8.50035 11.8625C10.3545 11.8625 11.863 10.354 11.863 8.49986C11.863 6.64573 10.3545 5.13721 8.50035 5.13721ZM8.50035 10.7416C7.26419 10.7416 6.2586 9.73598 6.2586 8.49986C6.2586 7.26374 7.26423 6.25811 8.50035 6.25811C9.73647 6.25811 10.7421 7.26374 10.7421 8.49986C10.7421 9.73598 9.7365 10.7416 8.50035 10.7416Z" fill="currentColor"></path>
+                            </svg>
+                            <span class="tp-product__tooltip tp-product__tooltip-right p-relative">Quick View</span>
+                        </button>
+                        <button>
+                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M13.2073 16.7012C12.9938 16.7014 12.7835 16.6492 12.5948 16.5493L9.08871 14.7066C9.06154 14.6921 9.03121 14.6845 9.0004 14.6845C8.96959 14.6845 8.93925 14.6921 8.91208 14.7066L5.40659 16.5493C5.18935 16.6637 4.94446 16.7149 4.69962 16.6973C4.45478 16.6796 4.21977 16.5938 4.02117 16.4495C3.82257 16.3052 3.66832 16.1082 3.57587 15.8808C3.48341 15.6534 3.45645 15.4047 3.49802 15.1628L4.1674 11.2596C4.17254 11.229 4.1701 11.1976 4.1603 11.1682C4.15049 11.1388 4.13361 11.1122 4.11115 11.0908L1.27727 8.32503C1.10133 8.15361 0.976905 7.93634 0.918109 7.69783C0.859313 7.45932 0.868493 7.20912 0.944609 6.97556C1.02072 6.742 1.16073 6.53443 1.34877 6.37636C1.53681 6.2183 1.76536 6.11606 2.00852 6.08122L5.92521 5.51254C5.95569 5.5081 5.98462 5.49631 6.00952 5.47818C6.03441 5.46004 6.05451 5.43612 6.06809 5.40847L7.81915 1.85629C7.92761 1.63608 8.09556 1.45064 8.30398 1.32096C8.5124 1.19129 8.75296 1.12256 8.99843 1.12256C9.2439 1.12256 9.48446 1.19129 9.69288 1.32096C9.9013 1.45064 10.0693 1.63608 10.1777 1.85629L11.9299 5.40735C11.9436 5.43491 11.9637 5.45876 11.9886 5.47687C12.0135 5.49499 12.0423 5.50684 12.0728 5.51141L15.9928 6.08066C16.2359 6.11569 16.4643 6.21804 16.6522 6.37613C16.8401 6.53422 16.98 6.74174 17.0561 6.97522C17.1322 7.20869 17.1414 7.4588 17.0827 7.69724C17.024 7.93569 16.8998 8.15296 16.7241 8.32447L13.8874 11.0886C13.865 11.11 13.8482 11.1366 13.8384 11.166C13.8286 11.1954 13.8261 11.2268 13.8311 11.2573L14.5005 15.1605C14.5327 15.3491 14.5234 15.5425 14.4733 15.7271C14.4232 15.9118 14.3334 16.0833 14.2103 16.2297C14.0872 16.3761 13.9336 16.494 13.7603 16.575C13.587 16.656 13.3981 16.6983 13.2068 16.699L13.2073 16.7012ZM9.0004 13.5591C9.21373 13.559 9.42384 13.6112 9.6124 13.711L13.1179 15.5532C13.1489 15.5709 13.1845 15.579 13.2202 15.5765C13.2558 15.574 13.2899 15.561 13.3181 15.5391C13.3476 15.5189 13.3705 15.4905 13.384 15.4574C13.3975 15.4243 13.401 15.388 13.3941 15.3529L12.7241 11.4492C12.6884 11.2391 12.7041 11.0234 12.7699 10.8207C12.8357 10.618 12.9497 10.4343 13.1021 10.2853L15.9388 7.52066C15.9642 7.49586 15.982 7.46448 15.9905 7.43005C15.9989 7.39562 15.9976 7.35952 15.9866 7.32583C15.9756 7.29213 15.9554 7.26218 15.9282 7.23936C15.9011 7.21653 15.8682 7.20174 15.8331 7.19666L11.9136 6.62685C11.7026 6.59629 11.5022 6.51482 11.3297 6.38948C11.1572 6.26413 11.0178 6.09868 10.9236 5.90741L9.16915 2.35579C9.15343 2.324 9.12915 2.29724 9.09903 2.27854C9.06891 2.25983 9.03416 2.24991 8.99871 2.24991C8.96325 2.24991 8.9285 2.25983 8.89839 2.27854C8.86827 2.29724 8.84398 2.324 8.82827 2.35579L7.07721 5.90628C6.98293 6.09762 6.84347 6.26312 6.67088 6.38847C6.49829 6.51382 6.29777 6.59525 6.08665 6.62572L2.16771 7.19666C2.13256 7.20163 2.09951 7.21637 2.07233 7.23921C2.04515 7.26204 2.02492 7.29205 2.01396 7.32582C2.003 7.35958 2.00174 7.39575 2.01033 7.4302C2.01891 7.46464 2.037 7.49599 2.06252 7.52066L4.89865 10.2853C5.05106 10.4343 5.16507 10.618 5.2309 10.8207C5.29674 11.0234 5.31244 11.2391 5.27665 11.4492L4.60671 15.3529C4.60063 15.388 4.60452 15.4241 4.61794 15.457C4.63135 15.49 4.65375 15.5185 4.68259 15.5394C4.71143 15.5603 4.74554 15.5726 4.78106 15.5751C4.81657 15.5775 4.85205 15.5699 4.88346 15.5532L8.3884 13.7104C8.57709 13.611 8.78714 13.5591 9.0004 13.5591Z" fill="currentColor"></path>
+                            </svg>
+                            <span class="tp-product__tooltip tp-product__tooltip-right p-relative">Rattings</span>                      
+                        </button>
+                        <button>
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M6.86634 10.2L5.33301 11.7333V2.66667C5.33301 2.26667 5.06634 2 4.66634 2C4.26634 2 3.99967 2.26667 3.99967 2.66667V11.7333L2.46634 10.2C2.19967 9.93333 1.79967 9.93333 1.53301 10.2C1.26634 10.4667 1.26634 10.8667 1.53301 11.1333L4.19967 13.8C4.26634 13.8667 4.33301 13.9333 4.39967 13.9333C4.46634 14 4.59967 14 4.66634 14C4.73301 14 4.86634 14 4.93301 13.9333C4.99967 13.9333 5.06634 13.8667 5.13301 13.8L7.79967 11.1333C8.06634 10.8667 8.06634 10.4667 7.79967 10.2C7.53301 9.93333 7.13301 9.93333 6.86634 10.2ZM14.4663 4.86667L11.7997 2.2C11.733 2.13333 11.6663 2.06667 11.5997 2.06667C11.533 2 11.3997 2 11.333 2C11.2663 2 11.133 2 11.0663 2.06667C10.9997 2.06667 10.933 2.13333 10.8663 2.2L8.19967 4.86667C7.93301 5.13333 7.93301 5.53333 8.19967 5.8C8.46634 6.06667 8.86634 6.06667 9.13301 5.8L10.6663 4.26667V13.3333C10.6663 13.7333 10.933 14 11.333 14C11.733 14 11.9997 13.7333 11.9997 13.3333V4.26667L13.533 5.8C13.7997 6.06667 14.1997 6.06667 14.4663 5.8C14.733 5.53333 14.733 5.13333 14.4663 4.86667Z" fill="currentColor"></path>
+                            </svg>
+                            <span class="tp-product__tooltip tp-product__tooltip-right p-relative">Add To Compare</span>                    
+                        </button>
+                      </div>
+                      <div class="tp-product__text text-center">
+                        <h4 class="product-title"><a href="#" class="product-name hov-animi">Plain Veneered Flush Door</a></h4>
+                        <span>$2362.00</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-xl-6 col-lg-6 col-md-6">
+                    <div class="tp-product-content p-relative mb-40">
+                      <div class="tp-product__thumb p-relative mb-25">
+                        <a href="#">
+                          <img class="image-1" src="assets/img/product/img-4.jpg" alt="">
+                          <img class="image-2" src="assets/img/product/img-5.jpg" alt="">
+                        </a>
+                        <div class="tp-portfolio__action">
+                          <a href="#">Add to Cart</a>
+                        </div>
+                      </div>
+                      <div class="tp-product__action">
+                        <button>
+                            <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M16.892 8.16945C16.7401 7.96169 13.1215 3.08252 8.49992 3.08252C3.87833 3.08252 0.259582 7.96169 0.107877 8.16925C-0.035959 8.36634 -0.035959 8.63366 0.107877 8.83076C0.259582 9.03851 3.87833 13.9177 8.49992 13.9177C13.1215 13.9177 16.7401 9.03847 16.892 8.83092C17.036 8.63386 17.036 8.36634 16.892 8.16945ZM8.49992 12.7968C5.09563 12.7968 2.14715 9.5584 1.27434 8.49972C2.14602 7.44011 5.08832 4.20339 8.49992 4.20339C11.904 4.20339 14.8523 7.44123 15.7255 8.50048C14.8538 9.56006 11.9115 12.7968 8.49992 12.7968Z" fill="currentColor"></path>
+                            <path d="M8.50035 5.13721C6.64622 5.13721 5.1377 6.64573 5.1377 8.49986C5.1377 10.354 6.64622 11.8625 8.50035 11.8625C10.3545 11.8625 11.863 10.354 11.863 8.49986C11.863 6.64573 10.3545 5.13721 8.50035 5.13721ZM8.50035 10.7416C7.26419 10.7416 6.2586 9.73598 6.2586 8.49986C6.2586 7.26374 7.26423 6.25811 8.50035 6.25811C9.73647 6.25811 10.7421 7.26374 10.7421 8.49986C10.7421 9.73598 9.7365 10.7416 8.50035 10.7416Z" fill="currentColor"></path>
+                            </svg>
+                            <span class="tp-product__tooltip tp-product__tooltip-right p-relative">Quick View</span>
+                        </button>
+                        <button>
+                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M13.2073 16.7012C12.9938 16.7014 12.7835 16.6492 12.5948 16.5493L9.08871 14.7066C9.06154 14.6921 9.03121 14.6845 9.0004 14.6845C8.96959 14.6845 8.93925 14.6921 8.91208 14.7066L5.40659 16.5493C5.18935 16.6637 4.94446 16.7149 4.69962 16.6973C4.45478 16.6796 4.21977 16.5938 4.02117 16.4495C3.82257 16.3052 3.66832 16.1082 3.57587 15.8808C3.48341 15.6534 3.45645 15.4047 3.49802 15.1628L4.1674 11.2596C4.17254 11.229 4.1701 11.1976 4.1603 11.1682C4.15049 11.1388 4.13361 11.1122 4.11115 11.0908L1.27727 8.32503C1.10133 8.15361 0.976905 7.93634 0.918109 7.69783C0.859313 7.45932 0.868493 7.20912 0.944609 6.97556C1.02072 6.742 1.16073 6.53443 1.34877 6.37636C1.53681 6.2183 1.76536 6.11606 2.00852 6.08122L5.92521 5.51254C5.95569 5.5081 5.98462 5.49631 6.00952 5.47818C6.03441 5.46004 6.05451 5.43612 6.06809 5.40847L7.81915 1.85629C7.92761 1.63608 8.09556 1.45064 8.30398 1.32096C8.5124 1.19129 8.75296 1.12256 8.99843 1.12256C9.2439 1.12256 9.48446 1.19129 9.69288 1.32096C9.9013 1.45064 10.0693 1.63608 10.1777 1.85629L11.9299 5.40735C11.9436 5.43491 11.9637 5.45876 11.9886 5.47687C12.0135 5.49499 12.0423 5.50684 12.0728 5.51141L15.9928 6.08066C16.2359 6.11569 16.4643 6.21804 16.6522 6.37613C16.8401 6.53422 16.98 6.74174 17.0561 6.97522C17.1322 7.20869 17.1414 7.4588 17.0827 7.69724C17.024 7.93569 16.8998 8.15296 16.7241 8.32447L13.8874 11.0886C13.865 11.11 13.8482 11.1366 13.8384 11.166C13.8286 11.1954 13.8261 11.2268 13.8311 11.2573L14.5005 15.1605C14.5327 15.3491 14.5234 15.5425 14.4733 15.7271C14.4232 15.9118 14.3334 16.0833 14.2103 16.2297C14.0872 16.3761 13.9336 16.494 13.7603 16.575C13.587 16.656 13.3981 16.6983 13.2068 16.699L13.2073 16.7012ZM9.0004 13.5591C9.21373 13.559 9.42384 13.6112 9.6124 13.711L13.1179 15.5532C13.1489 15.5709 13.1845 15.579 13.2202 15.5765C13.2558 15.574 13.2899 15.561 13.3181 15.5391C13.3476 15.5189 13.3705 15.4905 13.384 15.4574C13.3975 15.4243 13.401 15.388 13.3941 15.3529L12.7241 11.4492C12.6884 11.2391 12.7041 11.0234 12.7699 10.8207C12.8357 10.618 12.9497 10.4343 13.1021 10.2853L15.9388 7.52066C15.9642 7.49586 15.982 7.46448 15.9905 7.43005C15.9989 7.39562 15.9976 7.35952 15.9866 7.32583C15.9756 7.29213 15.9554 7.26218 15.9282 7.23936C15.9011 7.21653 15.8682 7.20174 15.8331 7.19666L11.9136 6.62685C11.7026 6.59629 11.5022 6.51482 11.3297 6.38948C11.1572 6.26413 11.0178 6.09868 10.9236 5.90741L9.16915 2.35579C9.15343 2.324 9.12915 2.29724 9.09903 2.27854C9.06891 2.25983 9.03416 2.24991 8.99871 2.24991C8.96325 2.24991 8.9285 2.25983 8.89839 2.27854C8.86827 2.29724 8.84398 2.324 8.82827 2.35579L7.07721 5.90628C6.98293 6.09762 6.84347 6.26312 6.67088 6.38847C6.49829 6.51382 6.29777 6.59525 6.08665 6.62572L2.16771 7.19666C2.13256 7.20163 2.09951 7.21637 2.07233 7.23921C2.04515 7.26204 2.02492 7.29205 2.01396 7.32582C2.003 7.35958 2.00174 7.39575 2.01033 7.4302C2.01891 7.46464 2.037 7.49599 2.06252 7.52066L4.89865 10.2853C5.05106 10.4343 5.16507 10.618 5.2309 10.8207C5.29674 11.0234 5.31244 11.2391 5.27665 11.4492L4.60671 15.3529C4.60063 15.388 4.60452 15.4241 4.61794 15.457C4.63135 15.49 4.65375 15.5185 4.68259 15.5394C4.71143 15.5603 4.74554 15.5726 4.78106 15.5751C4.81657 15.5775 4.85205 15.5699 4.88346 15.5532L8.3884 13.7104C8.57709 13.611 8.78714 13.5591 9.0004 13.5591Z" fill="currentColor"></path>
+                            </svg>
+                            <span class="tp-product__tooltip tp-product__tooltip-right p-relative">Rattings</span>                      
+                        </button>
+                        <button>
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M6.86634 10.2L5.33301 11.7333V2.66667C5.33301 2.26667 5.06634 2 4.66634 2C4.26634 2 3.99967 2.26667 3.99967 2.66667V11.7333L2.46634 10.2C2.19967 9.93333 1.79967 9.93333 1.53301 10.2C1.26634 10.4667 1.26634 10.8667 1.53301 11.1333L4.19967 13.8C4.26634 13.8667 4.33301 13.9333 4.39967 13.9333C4.46634 14 4.59967 14 4.66634 14C4.73301 14 4.86634 14 4.93301 13.9333C4.99967 13.9333 5.06634 13.8667 5.13301 13.8L7.79967 11.1333C8.06634 10.8667 8.06634 10.4667 7.79967 10.2C7.53301 9.93333 7.13301 9.93333 6.86634 10.2ZM14.4663 4.86667L11.7997 2.2C11.733 2.13333 11.6663 2.06667 11.5997 2.06667C11.533 2 11.3997 2 11.333 2C11.2663 2 11.133 2 11.0663 2.06667C10.9997 2.06667 10.933 2.13333 10.8663 2.2L8.19967 4.86667C7.93301 5.13333 7.93301 5.53333 8.19967 5.8C8.46634 6.06667 8.86634 6.06667 9.13301 5.8L10.6663 4.26667V13.3333C10.6663 13.7333 10.933 14 11.333 14C11.733 14 11.9997 13.7333 11.9997 13.3333V4.26667L13.533 5.8C13.7997 6.06667 14.1997 6.06667 14.4663 5.8C14.733 5.53333 14.733 5.13333 14.4663 4.86667Z" fill="currentColor"></path>
+                            </svg>
+                            <span class="tp-product__tooltip tp-product__tooltip-right p-relative">Add To Compare</span>                    
+                        </button>
+                      </div>
+                      <div class="tp-product__text text-center">
+                        <h4 class="product-title"><a href="#" class="product-name hov-animi">Knock-Down Door Frame</a></h4>
+                        <span>$2362.00</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-xl-6 col-lg-6 col-md-6">
+                    <div class="tp-product-content p-relative mb-40">
+                      <div class="tp-product__thumb p-relative mb-25">
+                        <a href="#">
+                          <img class="image-1" src="assets/img/product/img-6.jpg" alt="">
+                          <img class="image-2" src="assets/img/product/img-7.jpg" alt="">
+                        </a>
+                        <div class="tp-portfolio__action">
+                          <a href="#">Add to Cart</a>
+                        </div>
+                      </div>
+                      <div class="tp-product__action">
+                        <button>
+                            <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M16.892 8.16945C16.7401 7.96169 13.1215 3.08252 8.49992 3.08252C3.87833 3.08252 0.259582 7.96169 0.107877 8.16925C-0.035959 8.36634 -0.035959 8.63366 0.107877 8.83076C0.259582 9.03851 3.87833 13.9177 8.49992 13.9177C13.1215 13.9177 16.7401 9.03847 16.892 8.83092C17.036 8.63386 17.036 8.36634 16.892 8.16945ZM8.49992 12.7968C5.09563 12.7968 2.14715 9.5584 1.27434 8.49972C2.14602 7.44011 5.08832 4.20339 8.49992 4.20339C11.904 4.20339 14.8523 7.44123 15.7255 8.50048C14.8538 9.56006 11.9115 12.7968 8.49992 12.7968Z" fill="currentColor"></path>
+                            <path d="M8.50035 5.13721C6.64622 5.13721 5.1377 6.64573 5.1377 8.49986C5.1377 10.354 6.64622 11.8625 8.50035 11.8625C10.3545 11.8625 11.863 10.354 11.863 8.49986C11.863 6.64573 10.3545 5.13721 8.50035 5.13721ZM8.50035 10.7416C7.26419 10.7416 6.2586 9.73598 6.2586 8.49986C6.2586 7.26374 7.26423 6.25811 8.50035 6.25811C9.73647 6.25811 10.7421 7.26374 10.7421 8.49986C10.7421 9.73598 9.7365 10.7416 8.50035 10.7416Z" fill="currentColor"></path>
+                            </svg>
+                            <span class="tp-product__tooltip tp-product__tooltip-right p-relative">Quick View</span>
+                        </button>
+                        <button>
+                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M13.2073 16.7012C12.9938 16.7014 12.7835 16.6492 12.5948 16.5493L9.08871 14.7066C9.06154 14.6921 9.03121 14.6845 9.0004 14.6845C8.96959 14.6845 8.93925 14.6921 8.91208 14.7066L5.40659 16.5493C5.18935 16.6637 4.94446 16.7149 4.69962 16.6973C4.45478 16.6796 4.21977 16.5938 4.02117 16.4495C3.82257 16.3052 3.66832 16.1082 3.57587 15.8808C3.48341 15.6534 3.45645 15.4047 3.49802 15.1628L4.1674 11.2596C4.17254 11.229 4.1701 11.1976 4.1603 11.1682C4.15049 11.1388 4.13361 11.1122 4.11115 11.0908L1.27727 8.32503C1.10133 8.15361 0.976905 7.93634 0.918109 7.69783C0.859313 7.45932 0.868493 7.20912 0.944609 6.97556C1.02072 6.742 1.16073 6.53443 1.34877 6.37636C1.53681 6.2183 1.76536 6.11606 2.00852 6.08122L5.92521 5.51254C5.95569 5.5081 5.98462 5.49631 6.00952 5.47818C6.03441 5.46004 6.05451 5.43612 6.06809 5.40847L7.81915 1.85629C7.92761 1.63608 8.09556 1.45064 8.30398 1.32096C8.5124 1.19129 8.75296 1.12256 8.99843 1.12256C9.2439 1.12256 9.48446 1.19129 9.69288 1.32096C9.9013 1.45064 10.0693 1.63608 10.1777 1.85629L11.9299 5.40735C11.9436 5.43491 11.9637 5.45876 11.9886 5.47687C12.0135 5.49499 12.0423 5.50684 12.0728 5.51141L15.9928 6.08066C16.2359 6.11569 16.4643 6.21804 16.6522 6.37613C16.8401 6.53422 16.98 6.74174 17.0561 6.97522C17.1322 7.20869 17.1414 7.4588 17.0827 7.69724C17.024 7.93569 16.8998 8.15296 16.7241 8.32447L13.8874 11.0886C13.865 11.11 13.8482 11.1366 13.8384 11.166C13.8286 11.1954 13.8261 11.2268 13.8311 11.2573L14.5005 15.1605C14.5327 15.3491 14.5234 15.5425 14.4733 15.7271C14.4232 15.9118 14.3334 16.0833 14.2103 16.2297C14.0872 16.3761 13.9336 16.494 13.7603 16.575C13.587 16.656 13.3981 16.6983 13.2068 16.699L13.2073 16.7012ZM9.0004 13.5591C9.21373 13.559 9.42384 13.6112 9.6124 13.711L13.1179 15.5532C13.1489 15.5709 13.1845 15.579 13.2202 15.5765C13.2558 15.574 13.2899 15.561 13.3181 15.5391C13.3476 15.5189 13.3705 15.4905 13.384 15.4574C13.3975 15.4243 13.401 15.388 13.3941 15.3529L12.7241 11.4492C12.6884 11.2391 12.7041 11.0234 12.7699 10.8207C12.8357 10.618 12.9497 10.4343 13.1021 10.2853L15.9388 7.52066C15.9642 7.49586 15.982 7.46448 15.9905 7.43005C15.9989 7.39562 15.9976 7.35952 15.9866 7.32583C15.9756 7.29213 15.9554 7.26218 15.9282 7.23936C15.9011 7.21653 15.8682 7.20174 15.8331 7.19666L11.9136 6.62685C11.7026 6.59629 11.5022 6.51482 11.3297 6.38948C11.1572 6.26413 11.0178 6.09868 10.9236 5.90741L9.16915 2.35579C9.15343 2.324 9.12915 2.29724 9.09903 2.27854C9.06891 2.25983 9.03416 2.24991 8.99871 2.24991C8.96325 2.24991 8.9285 2.25983 8.89839 2.27854C8.86827 2.29724 8.84398 2.324 8.82827 2.35579L7.07721 5.90628C6.98293 6.09762 6.84347 6.26312 6.67088 6.38847C6.49829 6.51382 6.29777 6.59525 6.08665 6.62572L2.16771 7.19666C2.13256 7.20163 2.09951 7.21637 2.07233 7.23921C2.04515 7.26204 2.02492 7.29205 2.01396 7.32582C2.003 7.35958 2.00174 7.39575 2.01033 7.4302C2.01891 7.46464 2.037 7.49599 2.06252 7.52066L4.89865 10.2853C5.05106 10.4343 5.16507 10.618 5.2309 10.8207C5.29674 11.0234 5.31244 11.2391 5.27665 11.4492L4.60671 15.3529C4.60063 15.388 4.60452 15.4241 4.61794 15.457C4.63135 15.49 4.65375 15.5185 4.68259 15.5394C4.71143 15.5603 4.74554 15.5726 4.78106 15.5751C4.81657 15.5775 4.85205 15.5699 4.88346 15.5532L8.3884 13.7104C8.57709 13.611 8.78714 13.5591 9.0004 13.5591Z" fill="currentColor"></path>
+                            </svg>
+                            <span class="tp-product__tooltip tp-product__tooltip-right p-relative">Rattings</span>                      
+                        </button>
+                        <button>
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M6.86634 10.2L5.33301 11.7333V2.66667C5.33301 2.26667 5.06634 2 4.66634 2C4.26634 2 3.99967 2.26667 3.99967 2.66667V11.7333L2.46634 10.2C2.19967 9.93333 1.79967 9.93333 1.53301 10.2C1.26634 10.4667 1.26634 10.8667 1.53301 11.1333L4.19967 13.8C4.26634 13.8667 4.33301 13.9333 4.39967 13.9333C4.46634 14 4.59967 14 4.66634 14C4.73301 14 4.86634 14 4.93301 13.9333C4.99967 13.9333 5.06634 13.8667 5.13301 13.8L7.79967 11.1333C8.06634 10.8667 8.06634 10.4667 7.79967 10.2C7.53301 9.93333 7.13301 9.93333 6.86634 10.2ZM14.4663 4.86667L11.7997 2.2C11.733 2.13333 11.6663 2.06667 11.5997 2.06667C11.533 2 11.3997 2 11.333 2C11.2663 2 11.133 2 11.0663 2.06667C10.9997 2.06667 10.933 2.13333 10.8663 2.2L8.19967 4.86667C7.93301 5.13333 7.93301 5.53333 8.19967 5.8C8.46634 6.06667 8.86634 6.06667 9.13301 5.8L10.6663 4.26667V13.3333C10.6663 13.7333 10.933 14 11.333 14C11.733 14 11.9997 13.7333 11.9997 13.3333V4.26667L13.533 5.8C13.7997 6.06667 14.1997 6.06667 14.4663 5.8C14.733 5.53333 14.733 5.13333 14.4663 4.86667Z" fill="currentColor"></path>
+                            </svg>
+                            <span class="tp-product__tooltip tp-product__tooltip-right p-relative">Add To Compare</span>                    
+                        </button>
+                      </div>
+                      <div class="tp-product__text text-center">
+                        <h4 class="product-title"><a href="#" class="product-name hov-animi">Wooden Double-Leaf Door</a></h4>
+                        <span>$2362.00</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-xl-6 col-lg-6 col-md-6">
+                    <div class="tp-product-content p-relative mb-40">
+                      <div class="tp-product__thumb p-relative mb-25">
+                        <a href="#">
+                          <img class="image-1" src="assets/img/product/img-5.jpg" alt="">
+                          <img class="image-2" src="assets/img/product/img-1.jpg" alt="">
+                        </a>
+                        <div class="tp-portfolio__action">
+                          <a href="#">Add to Cart</a>
+                        </div>
+                      </div>
+                      <div class="tp-product__action">
+                        <button>
+                            <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M16.892 8.16945C16.7401 7.96169 13.1215 3.08252 8.49992 3.08252C3.87833 3.08252 0.259582 7.96169 0.107877 8.16925C-0.035959 8.36634 -0.035959 8.63366 0.107877 8.83076C0.259582 9.03851 3.87833 13.9177 8.49992 13.9177C13.1215 13.9177 16.7401 9.03847 16.892 8.83092C17.036 8.63386 17.036 8.36634 16.892 8.16945ZM8.49992 12.7968C5.09563 12.7968 2.14715 9.5584 1.27434 8.49972C2.14602 7.44011 5.08832 4.20339 8.49992 4.20339C11.904 4.20339 14.8523 7.44123 15.7255 8.50048C14.8538 9.56006 11.9115 12.7968 8.49992 12.7968Z" fill="currentColor"></path>
+                            <path d="M8.50035 5.13721C6.64622 5.13721 5.1377 6.64573 5.1377 8.49986C5.1377 10.354 6.64622 11.8625 8.50035 11.8625C10.3545 11.8625 11.863 10.354 11.863 8.49986C11.863 6.64573 10.3545 5.13721 8.50035 5.13721ZM8.50035 10.7416C7.26419 10.7416 6.2586 9.73598 6.2586 8.49986C6.2586 7.26374 7.26423 6.25811 8.50035 6.25811C9.73647 6.25811 10.7421 7.26374 10.7421 8.49986C10.7421 9.73598 9.7365 10.7416 8.50035 10.7416Z" fill="currentColor"></path>
+                            </svg>
+                            <span class="tp-product__tooltip tp-product__tooltip-right p-relative">Quick View</span>
+                        </button>
+                        <button>
+                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M13.2073 16.7012C12.9938 16.7014 12.7835 16.6492 12.5948 16.5493L9.08871 14.7066C9.06154 14.6921 9.03121 14.6845 9.0004 14.6845C8.96959 14.6845 8.93925 14.6921 8.91208 14.7066L5.40659 16.5493C5.18935 16.6637 4.94446 16.7149 4.69962 16.6973C4.45478 16.6796 4.21977 16.5938 4.02117 16.4495C3.82257 16.3052 3.66832 16.1082 3.57587 15.8808C3.48341 15.6534 3.45645 15.4047 3.49802 15.1628L4.1674 11.2596C4.17254 11.229 4.1701 11.1976 4.1603 11.1682C4.15049 11.1388 4.13361 11.1122 4.11115 11.0908L1.27727 8.32503C1.10133 8.15361 0.976905 7.93634 0.918109 7.69783C0.859313 7.45932 0.868493 7.20912 0.944609 6.97556C1.02072 6.742 1.16073 6.53443 1.34877 6.37636C1.53681 6.2183 1.76536 6.11606 2.00852 6.08122L5.92521 5.51254C5.95569 5.5081 5.98462 5.49631 6.00952 5.47818C6.03441 5.46004 6.05451 5.43612 6.06809 5.40847L7.81915 1.85629C7.92761 1.63608 8.09556 1.45064 8.30398 1.32096C8.5124 1.19129 8.75296 1.12256 8.99843 1.12256C9.2439 1.12256 9.48446 1.19129 9.69288 1.32096C9.9013 1.45064 10.0693 1.63608 10.1777 1.85629L11.9299 5.40735C11.9436 5.43491 11.9637 5.45876 11.9886 5.47687C12.0135 5.49499 12.0423 5.50684 12.0728 5.51141L15.9928 6.08066C16.2359 6.11569 16.4643 6.21804 16.6522 6.37613C16.8401 6.53422 16.98 6.74174 17.0561 6.97522C17.1322 7.20869 17.1414 7.4588 17.0827 7.69724C17.024 7.93569 16.8998 8.15296 16.7241 8.32447L13.8874 11.0886C13.865 11.11 13.8482 11.1366 13.8384 11.166C13.8286 11.1954 13.8261 11.2268 13.8311 11.2573L14.5005 15.1605C14.5327 15.3491 14.5234 15.5425 14.4733 15.7271C14.4232 15.9118 14.3334 16.0833 14.2103 16.2297C14.0872 16.3761 13.9336 16.494 13.7603 16.575C13.587 16.656 13.3981 16.6983 13.2068 16.699L13.2073 16.7012ZM9.0004 13.5591C9.21373 13.559 9.42384 13.6112 9.6124 13.711L13.1179 15.5532C13.1489 15.5709 13.1845 15.579 13.2202 15.5765C13.2558 15.574 13.2899 15.561 13.3181 15.5391C13.3476 15.5189 13.3705 15.4905 13.384 15.4574C13.3975 15.4243 13.401 15.388 13.3941 15.3529L12.7241 11.4492C12.6884 11.2391 12.7041 11.0234 12.7699 10.8207C12.8357 10.618 12.9497 10.4343 13.1021 10.2853L15.9388 7.52066C15.9642 7.49586 15.982 7.46448 15.9905 7.43005C15.9989 7.39562 15.9976 7.35952 15.9866 7.32583C15.9756 7.29213 15.9554 7.26218 15.9282 7.23936C15.9011 7.21653 15.8682 7.20174 15.8331 7.19666L11.9136 6.62685C11.7026 6.59629 11.5022 6.51482 11.3297 6.38948C11.1572 6.26413 11.0178 6.09868 10.9236 5.90741L9.16915 2.35579C9.15343 2.324 9.12915 2.29724 9.09903 2.27854C9.06891 2.25983 9.03416 2.24991 8.99871 2.24991C8.96325 2.24991 8.9285 2.25983 8.89839 2.27854C8.86827 2.29724 8.84398 2.324 8.82827 2.35579L7.07721 5.90628C6.98293 6.09762 6.84347 6.26312 6.67088 6.38847C6.49829 6.51382 6.29777 6.59525 6.08665 6.62572L2.16771 7.19666C2.13256 7.20163 2.09951 7.21637 2.07233 7.23921C2.04515 7.26204 2.02492 7.29205 2.01396 7.32582C2.003 7.35958 2.00174 7.39575 2.01033 7.4302C2.01891 7.46464 2.037 7.49599 2.06252 7.52066L4.89865 10.2853C5.05106 10.4343 5.16507 10.618 5.2309 10.8207C5.29674 11.0234 5.31244 11.2391 5.27665 11.4492L4.60671 15.3529C4.60063 15.388 4.60452 15.4241 4.61794 15.457C4.63135 15.49 4.65375 15.5185 4.68259 15.5394C4.71143 15.5603 4.74554 15.5726 4.78106 15.5751C4.81657 15.5775 4.85205 15.5699 4.88346 15.5532L8.3884 13.7104C8.57709 13.611 8.78714 13.5591 9.0004 13.5591Z" fill="currentColor"></path>
+                            </svg>
+                            <span class="tp-product__tooltip tp-product__tooltip-right p-relative">Rattings</span>                      
+                        </button>
+                        <button>
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M6.86634 10.2L5.33301 11.7333V2.66667C5.33301 2.26667 5.06634 2 4.66634 2C4.26634 2 3.99967 2.26667 3.99967 2.66667V11.7333L2.46634 10.2C2.19967 9.93333 1.79967 9.93333 1.53301 10.2C1.26634 10.4667 1.26634 10.8667 1.53301 11.1333L4.19967 13.8C4.26634 13.8667 4.33301 13.9333 4.39967 13.9333C4.46634 14 4.59967 14 4.66634 14C4.73301 14 4.86634 14 4.93301 13.9333C4.99967 13.9333 5.06634 13.8667 5.13301 13.8L7.79967 11.1333C8.06634 10.8667 8.06634 10.4667 7.79967 10.2C7.53301 9.93333 7.13301 9.93333 6.86634 10.2ZM14.4663 4.86667L11.7997 2.2C11.733 2.13333 11.6663 2.06667 11.5997 2.06667C11.533 2 11.3997 2 11.333 2C11.2663 2 11.133 2 11.0663 2.06667C10.9997 2.06667 10.933 2.13333 10.8663 2.2L8.19967 4.86667C7.93301 5.13333 7.93301 5.53333 8.19967 5.8C8.46634 6.06667 8.86634 6.06667 9.13301 5.8L10.6663 4.26667V13.3333C10.6663 13.7333 10.933 14 11.333 14C11.733 14 11.9997 13.7333 11.9997 13.3333V4.26667L13.533 5.8C13.7997 6.06667 14.1997 6.06667 14.4663 5.8C14.733 5.53333 14.733 5.13333 14.4663 4.86667Z" fill="currentColor"></path>
+                            </svg>
+                            <span class="tp-product__tooltip tp-product__tooltip-right p-relative">Add To Compare</span>                    
+                        </button>
+                      </div>
+                      <div class="tp-product__text text-center">
+                        <h4 class="product-title"><a href="#" class="product-name hov-animi">Plain Veneered Flush Door</a></h4>
+                        <span>$2362.00</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="tp-pagination tp-pagination-2 d-flex justify-content-center mb-40">
+                    <nav>
+                      <ul>
+                          <li>
+                            <a href="#">
+                                <i class="fa-solid fa-angles-left"></i>
+                            </a>
+                          </li>
+                          <li>
+                            <a href="#">1</a>
+                          </li>
+                          <li>
+                            <span class="current">2</span>
+                          </li>
+                          <li>
+                            <a href="#">3</a>
+                          </li>
+                          <li>
+                            <a href="#">
+                                <i class="fa-solid fa-angles-right"></i>
+                            </a>
+                          </li>
+                      </ul>
+                    </nav>
+                </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-xxl-4 col-xl-4 col-lg-5">
+              <div class="tp-sidebar-wrapper mb-60 ml-35">
+                <div class="tp-sidebar-widget tp-product-bg mb-30">
+                  <div class="tp-product-list-search mb-45">
+                      <h3 class="tp-sidebar-widget-title">search here</h3>
+                      <div class="tp-sidebar-widget-content mb-45">
+                      </div>
+                      <div class="tp-sidebar-search">
+                        <form action="#">
+                            <div class="tp-sidebar-search-input">
+                              <input type="text" placeholder="Search here...">
+                            </div>
+                            <div class="tp-sidebar-search-btn">
+                              <button type="submit"><i class="far fa-search"></i></button>
+                            </div>
+                        </form>
+                      </div>
+                  </div>
+                  <h3 class="tp-sidebar-widget-title tp-shop-widget-title">Categories</h3>
+                  <div class="tp-sidebar-widget-catagory tp-shop-widget-categories">
+                    <ul>
+                      <li><a href="blog-details.html">Door Hinges <span>(4)</span></a></li>
+                      <li><a href="blog-details.html">Door Locks <span>(4)</span></a></li>
+                      <li><a href="blog-details.html">Doors <span>(5)</span></a></li>
+                      <li><a href="blog-details.html">Fixtures <span>(5)</span></a></li>
+                      <li><a href="blog-details.html">Handles <span>(3)</span></a></li>
+                      <li><a href="blog-details.html">Hardware <span>(3)</span></a></li>
+                      <li><a href="blog-details.html">Keyless Entry <span>(4)</span></a></li>
+                      <li><a href="blog-details.html">Uncategorized <span>(0)</span></a></li>
+                      <li><a href="blog-details.html">Windows <span>(5)</span></a></li>
+                    </ul>
+                  </div>
+                  <div class="tp-shop-size-categories mb-35">
+                      <h3 class="tp-sidebar-widget-title tp-shop-size-title">Door Size</h3>
+                      <ul>
+                        <li><a href="#"><i class="fa-light fa-angle-left"></i> 36"x80" (8)</a></li>
+                        <li><a href="#"><i class="fa-light fa-angle-left"></i> 36"x96" (60)</a></li>
+                        <li><a href="#"><i class="fa-light fa-angle-left"></i> 72"x80" (7)</a></li>
+                        <li><a href="#"><i class="fa-light fa-angle-left"></i> 72"x96" (21)</a></li>
+                      </ul>
+                  </div>
+                  <!-- start shop-filter -->
+                  <div class="tp-shop-widget mb-35">
+                      <h3 class="tp-sidebar-widget-title tp-shop-widget-title mb-30">Filter By Price</h3>
+                        <div class="tp-shop-widget-content">
+                          <div class="tp-shop-widget-filter">
+                              <div id="slider-range" class="mb-10 ui-slider ui-corner-all ui-slider-horizontal ui-widget ui-widget-content">
+                                <div class="ui-slider-range ui-corner-all ui-widget-header"></div>
+                                <span tabindex="1" class="ui-slider-handle ui-corner-all ui-state-default"></span>
+                                <span tabindex="1" class="ui-slider-handle ui-corner-all ui-state-default"></span>
+                              </div>
+                              <div class="tp-shop-widget-filter-info d-flex align-items-center justify-content-between">
+                                <span class="input-range">
+                                    <input type="text" id="amount" readonly="">
+                                </span>
+                                <button class="tp-shop-widget-filter-btn" type="button">Filter</button>
+                              </div>
+                          </div>
+                        </div>
+                    </div>
+                  <!-- end shop-filter -->
+                  <div class="tp-sidebar-tag mb-30">
+                    <h3 class="tp-sidebar-widget-title">Populer Tags</h3>
+                      <div class="tp-sidebar-widget-content">
+                        <div class="tagcloud">
+                            <a href="blog-details.html">symphony</a>
+                            <a href="blog-details.html">nokia</a>
+                            <a href="blog-details.html">iPhone</a>
+                            <a href="blog-details.html">Samsung</a>
+                            <a href="blog-details.html">Alcatel</a>
+                            <a href="blog-details.html">Oppos</a>
+                            <a href="blog-details.html">landing</a>
+                            <a href="blog-details.html">Oppos</a>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- start News inner area  -->
+
+      <!--  Start schedule Area-->
+      <section class="tp-cta__area black-bg-2 pt-40 pb-65 fix ">
+        <div class="container">
+          <div class="tp-cta__content p-relative text-center fix">
+            <div class="tp-scroll-hr">
+              <div class="tp-scroll-wrap">
+                <h3 class="tp-cta__title">Schedule A Free Consultation for Window and Door Replacement</h3>
+              </div>
+            </div>
+            <div class="get__schedule">
+              <a class="wow zoomIn" data-wow-duration=".8s" data-wow-delay=".5s" href="#">Get<br>Schedule Now</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    <!--  End schedule Area-->
+    </main>
+  
+    <!--  start footer Area-->
+    <section class="tp-foote-area black-bg-2 pt-15 pb-20">
+      <div class="tp-footer-main pt-120 pt-120">
+        <div class="container">
+          <div class="row">
+            <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-3">
+              <div class="tp-footer-widget tp-footer-col-1">
+                <div class="tp-footer-widget__logo mb-30 wow fadeInUp" data-wow-duration=".8s" data-wow-delay=".5s" style="visibility: visible; animation-duration: 0.8s; animation-delay: 0.5s; animation-name: fadeInUp;">
+                  <a href="index.html"><img src="assets/img/footer/footer-logo.png" alt=""></a>
+                </div>
+                <div class="tp-footer-widget__content mb-20">
+                  <div class="tp-footer-widget__info wow fadeInUp" data-wow-duration=".8s" data-wow-delay=".5s" style="visibility: visible; animation-duration: 0.8s; animation-delay: 0.5s; animation-name: fadeInUp;">
+                    <p>Bjørn is an award UI/UX designs
+                      and branding agency based in
+                      New York, USA.</p>
+                    <div class="tp-footer-widget__social mt-30 wow fadeInUp" data-wow-duration=".8s" data-wow-delay=".5s" style="visibility: visible; animation-duration: 0.8s; animation-delay: 0.5s; animation-name: fadeInUp;">
+                      <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                      <a href="#"><i class="fa-brands fa-vimeo-v"></i></a>
+                      <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                      <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    </div>  
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-3">
+              <div class="tp-footer-widget tp-footer-col-2 ml-60">
+                <div class="tp-footer-widget__content mb-20">
+                  <h3 class="tp-footer-widget__title mb-30 wow fadeInUp" data-wow-duration=".8s" data-wow-delay=".5s" style="visibility: visible; animation-duration: 0.8s; animation-delay: 0.5s; animation-name: fadeInUp;">Our Links</h3>
+                  <ul class="tp-footer-widget__link wow fadeInUp" data-wow-duration=".9s" data-wow-delay=".6s" style="visibility: visible; animation-duration: 0.9s; animation-delay: 0.6s; animation-name: fadeInUp;">
+                    <li><a href="#" class="hov-animi-2">Home</a></li>
+                    <li><a href="#" class="hov-animi-2">Services</a></li>
+                    <li><a href="#" class="hov-animi-2">About Us</a></li>
+                    <li><a href="#" class="hov-animi-2">Features</a></li>
+                    <li><a href="#" class="hov-animi-2">Contacts</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-3">
+              <div class="tp-footer-widget tp-footer-col-3 ml-20">
+                <h3 class="tp-footer-widget__title mb-30 wow fadeInUp" data-wow-duration=".8s" data-wow-delay=".5s" style="visibility: visible; animation-duration: 0.8s; animation-delay: 0.5s; animation-name: fadeInUp;">Find It Fast</h3>
+                <div class="tp-footer-widget__content mb-20">
+                  <ul class="tp-footer-widget__link wow fadeInUp" data-wow-duration=".9s" data-wow-delay=".6s" style="visibility: visible; animation-duration: 0.9s; animation-delay: 0.6s; animation-name: fadeInUp;">
+                    <li><a href="#" class="hov-animi-2">Features</a></li>
+                    <li><a href="#" class="hov-animi-2">Team Member</a></li>
+                    <li><a href="#" class="hov-animi-2">Our Careers</a></li>
+                    <li><a href="#" class="hov-animi-2">Login Here</a></li>
+                    <li><a href="#" class="hov-animi-2">Registered</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-3">
+              <div class="tp-footer-widget tp-footer-col-4 ml-10">
+                <div class="tp-footer-widget__content mb-20">
+                  <div class="tp-footer-widget__info wow fadeInUp" data-wow-duration=".8s" data-wow-delay=".5s" style="visibility: visible; animation-duration: 0.8s; animation-delay: 0.5s; animation-name: fadeInUp;">
+                    <p><a href="#">New South Head Rd, Double Bay NSW 2028, New York</a></p>
+                    <div class="tp-footer-widget__mail mt-30">
+                      <a href="mailto:contact@bjorn.com">contact@bjorn.com</a>
+                      <span><a href="tel:1300877503">+1300 877 503</a></span>
+                    </div>  
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="tpfooter-bottom-area pt-120">
+        <div class="container">
+          <div class="tp-footer-bottom__wrap">
+            <div class="row">
+              <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-12">
+                <div class="tp-footer-bottom__copyright">
+                  <span>Made with ❤️ by <a href="https://themeforest.net/user/hixstudio/portfolio" target="_blank">Themepure.</a> - Powered by Theme</span>
+                </div>
+              </div>
+              <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-12">
+                <div class="tp-footer-bottom__right">
+                  <ul class="tp-footer-bottom__privacy d-flex align-items-end">
+                    <li><a href="#">Style Guide</a></li>
+                    <li><a href="#">Licensing</a></li>
+                    <li><a href="#">Instruction</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--  End footer Area-->
+
+    <!-- JS here -->
+    <script src="assets/js/vendor/jquery-3.7.1.min.js"></script>
+    <script src="assets/js/vendor/waypoints.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/meanmenu.js"></script>
+    <script src="assets/js/slick.js"></script>
+    <script src="assets/js/magnific-popup.js"></script>
+    <script src="assets/js/nice-select.js"></script>
+    <script src="assets/js/purecounter.js"></script>
+    <script src="assets/js/parallax.js"></script>
+    <script src="assets/js/countdown.js"></script>
+    <script src="assets/js/wow.js"></script>
+    <script src="assets/js/isotope-pkgd.js"></script>
+    <script src="assets/js/imagesloaded-pkgd.js"></script>
+    <script src="assets/js/swiper-bundle.js"></script>
+    <script src="assets/js/ajax-form.js"></script>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>

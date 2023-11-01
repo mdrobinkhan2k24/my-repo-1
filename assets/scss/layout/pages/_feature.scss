@@ -1,0 +1,219 @@
+@use '../../utils' as *;
+
+
+.tp-featured{
+    &__content{
+        border-right: 1.3px solid #F0F1F1;
+        padding: 0px 30px;
+        height: 120px;
+        @media #{$lg,$md} {
+            padding: 0;
+        }
+        @media #{$sm,$xs} {
+            border: 0;
+        }
+        @media #{$sm} {
+            padding: 0 5px;
+        }
+        &:hover > .tp-featured__icon{
+            animation: icon-bounce 0.8s 1;
+            color: var(--tp-theme-primary);
+        }
+    }
+    &__icon{
+        margin-right: 24px;
+        color: var(--tp-heading-primary);
+        transition: .3s;
+    }
+    &__title{
+        color: var(--tp-heading-primary);
+        font-size: 16px;
+        @media #{$xl} {
+            font-size: 15px;
+        }
+    }
+    &__sub-title{
+        font-size: 14px;
+        @media #{$xl} {
+            font-size: 11px;
+        }
+        @media #{$lg,$md} {
+            font-size: 12px;
+        }
+    }
+}
+.row{
+    & .col-xl-3:last-child .tp-featured__content {
+        border: 0;
+    }
+}
+// ********** welcome to Features-2 Area **********
+    .tp-bottom-features{
+        &__item {
+            background: #282727;
+            padding: 43px 80px;
+            border-radius: 50px;
+            position: relative;
+            overflow: hidden;
+            @media #{$xxl} {
+                padding: 40px 20px;
+            }
+            @media #{$xl} {
+                padding: 30px 10px;
+            }
+            @media #{$lg} {
+                padding: 20px 5px;
+            }
+            @media #{$md} {
+                padding: 35px 5px;
+            }
+            @media #{$sm} {
+                padding: 35px 5px;
+            }
+            @media #{$xs} {
+                padding: 35px 5px;
+            }
+            &::before{
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                right: 25px;
+                width: 60px;
+                height: 60px;
+                text-align: end;
+                margin: auto;
+                background: var(--tp-theme-primary);
+                content: "";
+                border-radius: 50%;
+                transform: translateX(100%);
+                opacity: 0;
+                visibility: hidden;
+                transition: 0.3s;
+            }
+            & a {
+                display: block;
+                font-size: 26px;
+                color: #fff;
+                @media #{$xl,$lg} {
+                    font-size: 16px;
+                }
+                @media #{$md} {
+                    font-size: 26px;
+                }
+                @media #{$sm,$xs} {
+                    font-size: 20px;
+                }
+            }
+            &:hover .tp-bottom-features__item{
+                &::before{
+                    visibility: visible;
+                    opacity: 1;
+                    // transform: translateX(0);
+                }
+            }
+        }
+    }
+    .tp-features-2-title{
+        font-size: 80px;
+        font-weight: 500;
+        color: #fff;
+        @media #{$xs,$sm} {
+            font-size: 35px;
+        }
+        &.feature-bottom-title{
+            @media #{$sm} {
+                font-size: 60px;
+            }
+        }
+      }
+// ********** welcome to Features-3 Area ********** 
+.tp-featured-3{
+    &__wrap-3{
+        @media #{$x3l} {
+            padding: 0 100px
+        }
+        @media #{$xxl} {
+            padding: 0 70px;
+        }
+        @media #{$xl} {
+            padding: 0 50px;
+        }
+        @media #{$lg} {
+            padding: 0 30px;
+        }
+        @media #{$md} {
+            padding: 0 10px;
+        }
+        @media #{$sm} {
+            padding: 0;
+        }
+        @media #{$xs} {
+            padding: 0;
+        }
+    }
+    &__item{
+        &-title {
+            font-weight: 500;
+            text-transform: capitalize;
+            @media #{$xxl} {
+                font-size: 20px;
+            }
+            @media #{$xl} {
+                font-size: 17px;
+            }
+            @media #{$lg} {
+                font-size: 23px;
+            }
+            @media #{$md} {
+                font-size: 18px;
+            }
+            @media #{$sm} {
+                font-size: 22px;
+            }
+          }
+        &:hover > .tp-featured-3__icon{
+            animation: icon-bounce 0.8s 1;
+        }
+    }
+    &__item-dsc{
+        & p{
+            padding: 0 55px;
+            font-size: 18px;
+            @media #{$x4l} {
+                padding: 0 38px
+            }
+            @media #{$x3l} {
+                padding: 0 25px
+            }
+            @media #{$xxl} {
+                padding: 0 18px
+            }
+            @media #{$xl} {
+                padding: 0 10px;
+                font-size: 16px;
+            }
+            @media #{$lg} {
+                padding: 0 16px;
+            }
+            @media #{$md} {
+                padding: 0px 45px;
+            }
+            @media #{$sm} {
+                padding: 0;
+            }
+            @media #{$xs} {
+                padding: 0 35px;
+            }
+        }
+    }
+    &__icon{
+        & span {
+            color: var(--tp-theme-primary);
+        }
+    }
+    &__action{
+        & a{
+            color: var(--tp-heading-primary);
+        }
+    }
+}

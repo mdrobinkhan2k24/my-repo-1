@@ -1,0 +1,84 @@
+@use '../../utils' as *;
+
+.tp-price{
+    &-tab{
+        & button {
+            font-weight: 700;
+            font-size: 16px;
+            color: var(--tp-common-black);
+            transition: 0.3s;
+            border: 0;
+            padding: 7px 20px;
+            box-shadow: 0px 8px 29px 0px rgba(0, 0, 0, 0.06);
+            &.active {
+                color: #000;
+                background-color: var(--tp-theme-primary);
+            }
+            &:hover {
+                color: #000;
+            }
+        }
+    }
+    &-item {
+        border: 1px solid#E9E6E6;
+        &.active {
+            border: 0;
+            box-shadow: 0px 8px 29px 0px rgba(0, 0, 0, 0.06);
+            & > .tp-price-action{
+                & > .tp-btn-2{
+                    border: 1px transparent;
+                    background-color: var(--tp-theme-primary);
+                }
+            }
+        }
+      }
+    &-top-box {
+        border-bottom: 1px solid #E9E6E6;
+        padding: 45px;
+        padding-bottom: 30px;
+        margin-bottom: 22px;
+      }
+    &-name {
+        font-size: 30px;
+        font-weight: 500;
+        color: var(--tp-heading-primary);
+        margin-bottom: 30px;
+    }
+    &-rate{
+        & h3 {
+            font-size: 42px;
+            font-weight: 700;
+            & span{
+                font-size: 20px;
+                font-weight: 500;
+            }
+        }
+    }
+    &-offer{
+        & span {
+            display: inline-block;
+            padding: 2px 12px;
+            background: var(--tp-theme-primary);
+            font-size: 15px;
+            color: var(--tp-heading-primary);
+            margin-right: -20px;
+            border-radius: 5px;
+          }
+    }
+    &-list{
+        padding: 0 45px;
+        margin-bottom: 42px;
+        & ul{
+            list-style: none;
+            & li {
+                font-size: 18px;
+                line-height: 2.5;
+                color: #565463;
+                & i{
+                    color: #000;
+                    padding-right: 10px;
+                }
+            }
+        }
+    }
+}

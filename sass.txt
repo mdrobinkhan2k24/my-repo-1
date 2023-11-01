@@ -1,0 +1,1 @@
+sass --watch "C:\Users\Robin Khan\Dropbox\Robin Khan\widox-project\assets\scss\main.scss":"C:\Users\Robin Khan\Dropbox\Robin Khan\widox-project\assets\css\main.css"

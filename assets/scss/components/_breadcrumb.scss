@@ -1,0 +1,21 @@
+@use '../utils' as *;
+
+/*----------------------------------------*/
+/*  2.11 Breadcrumb
+/*----------------------------------------*/
+
+.tp-breadcrumb{
+    &__list{
+        & span{
+            font-size: 18px;
+            color: var(--tp-heading-primary);
+        }
+    }
+    &__title{
+        font-size: 60px;
+        line-height: 1.5;
+        @media #{$xs} {
+            font-size: 40px;
+        }
+    }
+}

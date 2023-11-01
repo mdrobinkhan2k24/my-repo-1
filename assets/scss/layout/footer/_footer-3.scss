@@ -1,0 +1,104 @@
+@use '../../utils' as *;
+
+/*----------------------------------------*/
+/*  6.3 Footer Style 3
+/*----------------------------------------*/
+.tp-footer-top{
+    border-bottom: 1px solid #1A1C21;
+    & .footer-section{
+        &__title {
+            color: #fff;
+            font-size: 50px;
+            @media #{$lg} {
+                font-size: 41px;
+            }
+            @media #{$md} {
+                font-size: 29px;
+            }
+            @media #{$xs} {
+                font-size: 40px;
+                line-height: inherit;
+            }
+        }
+        &__title-3{
+            @media #{$xs,$sm} {
+                font-size: 28px;
+                line-height: 1.2;
+            }
+        }
+    }
+    & .tp-contact-btn{
+        & a{
+            @media #{$xs} {
+                float: inline-start;
+                flex: inherit;
+                display: block;
+            }
+        }
+        @media #{$xs} {
+            margin-top: 80px;
+          }
+    }
+}
+.tp-footer-widget{
+    &-3{
+        &__info{
+            font-size: 22px;
+            line-height: 2.4;
+            & p{
+                & a {
+                    text-transform: capitalize;
+                  }
+            }
+        }
+        &__link{
+            & li{
+                & a:hover{
+                    color: var(--tp-theme-primary);
+                }
+            }
+        }
+        &__mail {
+            line-height: normal;
+            font-size: 22px;
+          }
+        & .footer-call{
+            font-size: 24px;
+        }
+    }
+    &__social-3{
+        @media #{$xs} {
+            display: inline-flex;
+        }
+    }
+}
+.tp-footer-3-col-1,.tp-footer-3-col-2,.tp-footer-3-col-3,.tp-footer-3-col-4 {
+	@media #{$md} {
+        margin-left: 0;
+    }
+}
+.tp-footer-copyright{
+    &__wrap-3{
+        border-top: 1px solid #1A1C21;
+    }
+    &__text-3{
+        font-size: 18px;
+        color: var(--tp-footer-grey-1);
+        @media #{$xs} {
+            font-size: 13px;
+        }
+    }
+    &__link{
+        font-size: 18px;
+        color: var(--tp-footer-grey-1);
+        @media #{$xs} {
+            font-size: 13px;
+        }
+        & a{
+            @media #{$xs} {
+                text-align: start;
+                display: block;
+            }
+        }
+    }
+}

@@ -1,0 +1,351 @@
+@use '../../utils' as *;
+
+.tp-about{
+    &__thumb{
+        &-box{
+            margin-left: 30px;
+            @media #{$xxl} {
+                left: 45px;
+            }
+            @media #{$xl} {
+                left: 0px;
+            }
+            @media #{$lg} {
+                right: 0px;
+                margin-left: 0;
+            }
+            @media #{$md} {
+                left: 44px;
+            }
+            @media #{$sm,$xs} {
+                right: 0;
+                left: 0;
+                text-align: center;
+                margin-left: 0;
+            }
+            & .tp-about-big-thumb{
+                & img{
+                    @media #{$lg} {
+                        margin-left: 0px;
+                    }
+                    @media #{$xs} {
+                        width: 100%;
+                    }
+                }
+            }
+            &:hover .shine-hov::before{
+                animation: shine 1s;
+            }
+            & .about-sm-img {
+                position: absolute;
+                right: 82px;
+                bottom: -33px;
+                overflow: hidden;
+                animation: none;
+                transition: 0.3s;
+                z-index: 1;
+                & img{
+                    transition: .3s;
+                    &:hover{
+                        transform: scale(1.17);
+                    }
+                }
+                @media #{$md} {
+                    right: 100px;
+                }
+                @media #{$xl} {
+                    right: 30px;
+                }
+                @media #{$lg} {
+                    right: 0px;
+                }
+                @media #{$sm,$xs} {
+                    width: auto;
+                    left: 0;
+                    right: 0;
+                    bottom: -68px;
+                    text-align: center;
+                    margin: auto;
+                }
+            }
+            & span{
+                position: absolute;
+                font-size: 100px;
+                left: -46px;
+                top: 25px;
+                font-weight: 700;
+                color: var(--tp-heading-primary);
+                z-index: 1;
+                @media #{$lg} {
+                    left: 0px;
+                }
+                @media #{$sm} {
+                    left: 10px;
+                }
+                @media #{$xs} {
+                    left: 0;
+                }
+            }
+        }
+    }
+    &__offer {
+        font-size: 18px;
+        color: var(--tp-heading-primary);
+        font-weight: 500;
+        display: block;
+        text-transform: capitalize;
+        margin-bottom: 32px;
+        @media #{$lg} {
+            font-size: 15px;
+        }
+    }
+    &__wrapper{
+        & p{
+            font-size: 18px;
+            text-transform: capitalize;
+            line-height: 1.8;
+            color: var(--tp-text-body);
+            margin-bottom: 36px;
+        }
+    }
+    &__call {
+        font-weight: 500;
+        font-size: 16px;
+        color: var(--tp-heading-primary);
+        @media #{$xs} {
+            display: none;
+        }
+        @media #{$lg} {
+            margin-left: -30px;
+        }
+        & span{
+            font-size: 22px;
+            background: #F1F2F4;
+            width: 58px;
+            height: 58px;
+            display: inline-block;
+            line-height: 58px;
+            text-align: center;
+            border-radius: 50%;
+            margin-right: 10px;
+            transition: .3s;
+        }
+        &:hover{
+            color: #000;
+            & > {
+                & span{
+                    animation: icon-bounce 0.8s 1;
+                    background: #D7B400;
+                    color: var(--tp-heading-primary);
+                }
+            }
+        }
+    }
+}
+
+// about-2 sass code-here
+.tp-about{
+    &__thumb-2{
+        @media #{$xxl,$xl} {
+            left: -54px;
+        }
+        @media #{$md} {
+            left: -44px;
+        }
+        & .about-big-img {
+            @media #{$lg} {
+                margin: 0;
+            }
+        }
+        & .about-sm-img {
+            position: absolute;
+            right: 0;
+            bottom: -39px;
+            overflow: hidden;
+            animation: none;
+            transition: .3s;
+            @media #{$lg} {
+                right: -30px;
+            }
+            & img{
+                transition: .3s;
+                &:hover{
+                    transform: scale(1.17);
+                }
+            }
+        }
+    }
+    &__call-2{
+        & span{
+            background: #fff;
+            transition: .3s;
+        }
+        &:hover > {
+            & span{
+                animation: icon-bounce 0.8s 1;
+                color: var(--tp-heading-primary);
+            }
+            & a{
+                color: var(--tp-heading-primary);
+            }
+        }
+    }
+}
+
+// start about 3 area 
+.tp-about{
+    &__wrapper-3{
+        & p{
+            margin-bottom: 20px;
+            @media #{$xl} {
+                font-size: 16px;
+            }
+            @media #{$md} {
+                padding-right: 50px;
+            }
+            @media #{$xs} {
+                font-size: 16px;
+            }
+        }
+        & .tp-about{
+            &__offer{
+                @media #{$lg} {
+                    font-size: inherit;
+                }
+            }
+        }
+        & .section{
+            &__title-pre{
+               @media #{$xs} {
+                font-size: 15px;
+               }
+            }
+        }
+    }
+    &__offer{
+        & a{
+            display: inline;
+        }
+    }
+    &__thumb-3{
+        position: relative;
+        left: 20px;
+        & .big-thumb-3{
+            position: relative;
+            @media #{$lg} {
+                left: 0;
+            }
+        }
+        @media #{$lg} {
+            left: 0;
+        }
+        @media #{$md} {
+            left: 90px;
+            margin-bottom: 40px;
+        }
+        @media #{$sm,$xs} {
+            left: 0;
+            margin-bottom: 70px;
+        }
+        & .guranty-img{
+            width: 205px;
+            height: 197px;
+            position: absolute;
+            top: -42px;
+            left: -42px;
+            z-index: 2;
+            animation: rotate 20s linear infinite;
+            @media #{$lg} {
+                left: 0;
+            }
+            @media #{$sm} {
+                left: 0;
+            }
+            @media #{$xs} {
+                top: -100px;
+                left: 60px;
+            }
+        }
+        & .about-sm-img {
+            position: absolute;
+            right: 110px;
+            bottom: -39px;
+            @media #{$lg} {
+                right: 95px;
+            }
+            @media #{$md} {
+                right: 178px;
+                bottom: -25px;
+            }
+            @media #{$sm} {
+                left: 0;
+                right: 0;
+                text-align: center;
+                margin: auto;
+            }
+            @media #{$xs} {
+                position: static;
+                margin-top: 20px;
+                margin-left: 15px;
+            }
+            &.small-img-3{
+                @media #{$xs} {
+                    margin-left: 0;
+                }
+            }
+          }
+    }
+    &__feature-list{
+        & li{
+            list-style: none;
+            font-size: 18px;
+            display: flex;
+            position: relative;
+            padding-left: 27px;
+            margin-bottom: 15px;
+            & i{
+                color: var(--tp-theme-primary);
+                margin-right: 15px;
+                position: absolute;
+                left: 0;
+                top: 4px;
+            }
+        }
+    }
+    &__author-thumb {
+        width: 75px;
+        height: 75px;
+        border: 1px solid var(--tp-theme-primary);
+        line-height: 5.1;
+        text-align: center;
+        border-radius: 50%;
+        margin-right: 25px;
+        flex: 0 0 auto;
+        & img{
+            width: 59px;
+            height: 59px;
+            border-radius: 50%;
+        }
+      }
+    &__author-sing {
+        margin-right: 25px;
+        flex: 0 0 auto;
+      }
+    &__author-sinc{
+        flex: 0 0 auto;
+        &  h5 {
+            font-size: 18px;
+            color: #535353;
+            font-weight: 400;
+            @media #{$lg} {
+                font-size: 13px;
+            }
+            @media #{$sm} {
+                font-size: 17px;
+            }
+            @media #{$xs} {
+                margin-top: 20px;
+            }
+          }
+    }
+}

@@ -1,0 +1,85 @@
+@use '../../utils' as *;
+
+/*----------------------------------------*/
+/*  3.3 Header Style 3
+/*----------------------------------------*/
+.tp-header {
+    &__wrap-3{
+        height: 99px;
+        border-bottom: 1px solid rgba($color: #fff, $alpha: 0.10);
+        position: absolute;
+        z-index: 999;
+        width: 100%;
+        @media #{$xs} {
+            height: 60px;
+            padding: 15px 0;
+        }
+    }
+}
+
+.tp-main__logo-3 {
+    border-right: 1px solid rgba($color: #fff, $alpha: 0.10);
+    padding: 34px 0px;
+    padding-right: 60px;
+    @media #{$xl,$lg} {
+        margin-left: 5px;
+    }
+    @media #{$lg,$md,$sm} {
+        padding-right: 30px;
+    }
+    @media #{$sm} {
+        margin: 0;
+    }
+    @media #{$xs} {
+        padding: 0;
+        border: 0;
+    }
+    & img{
+        margin-top: -5;
+    }
+}
+
+.tp-header-3{
+    &__menu-right-3 {
+        margin-right: 55px;
+        @media #{$xxl} {
+            margin-right: 30px;
+        }
+        @media #{$xl} {
+            margin-right: 5px;
+        }
+        @media #{$lg,$md,$xs} {
+            margin-right: 50px;
+        }
+        @media #{$sm} {
+            margin-right: 20px;
+        }
+        & .heder-shop-3 {
+            & .tp-header-cart {
+                color: #fff;
+                border-left: 1px solid rgba($color: #fff, $alpha: 0.10);
+                padding: 35px 12px 35px 55px;
+                @media #{$xl} {
+                    padding: 35px 0px 35px 35px;
+                }
+                & span {
+                    background: var(--tp-theme-primary);
+                    font-size: 10px;
+                    width: 18px;
+                    height: 18px;
+                    color: var(--tp-heading-primary);
+                    font-weight: 600;
+                    line-height: 18px;
+                    position: relative;
+                    bottom: 13px;
+                    right: 12px;
+                }
+            }
+        }
+    }
+    &__right-btn{
+        & .tp-mobile-bars i{
+            color: var(--tp-theme-primary);
+        }
+    }
+}

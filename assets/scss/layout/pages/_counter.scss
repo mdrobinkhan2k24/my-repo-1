@@ -1,0 +1,187 @@
+@use '../../utils' as *;
+
+// welcome to Themepure Counter area
+.tp-counter-height {
+    padding-top: 228px;
+    padding-bottom: 230px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.counter-wrapper {
+	margin-top: -100px;
+}
+
+.counter-video-play {
+	text-align: center;
+	margin: auto;
+    & a {
+        width: 120px;
+        height: 120px;
+        border: 1px solid var(--tp-common-white);
+        display: inline-block;
+        line-height: 120px;
+        font-size: 18px;
+        color: var(--tp-common-white);
+        border-radius: 50%;
+        transition: .3s;
+        position: relative;
+        z-index: 2;
+        &::before{
+            position: absolute;
+            width: 120px;
+            height: 120px;
+            background: var(--tp-theme-primary);
+            content: "";
+            left: 0;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            border-radius: 50%;
+            text-align: center;
+            margin: auto;
+            z-index: -1;
+            scale: 0;
+            transition: .3s;
+        }
+        &:hover{
+            &::before{
+                scale: 1;
+            }
+            border: 1px solid transparent;
+            color: var(--tp-common-black);
+        }
+    }
+}
+.tp-counter{
+    & p {
+        font-size: 18px;
+        font-weight: 500;
+        margin-bottom: 5px;
+        color: var(--tp-common-black-solid);
+    }
+    & h3{
+        font-size: 50px;
+        font-weight: 500;
+    }
+}
+
+// start counter-3 area
+.tp-counter-3{
+    &__text{
+        & p {
+            font-size: 18px;
+            margin-right: 73px;
+            line-height: 33px;
+            @media #{$lg,$sm,$xs} {
+                margin: 0;
+            }
+            @media #{$md} {
+                margin-right: 130px;
+            }
+            & span {
+                font-size: 50px;
+                font-weight: 700;
+                color: var(--tp-heading-primary);
+            }
+          }
+    }
+    &__content{
+        @media #{$xl} {
+            margin-left: -25px;
+        }
+        & .counter-big-text {
+            font-size: 60px;
+            text-transform: capitalize;
+            opacity: .13;
+        }
+        & .tp-counter{
+            margin-top: -55px;
+            margin-left: 26px;
+            & p{
+                font-size: 18px;
+            }
+            & .tp-faq-counter{
+                font-weight: 700;
+                @media #{$xs} {
+                    font-size: 35px;
+                }
+            }
+        }
+    }
+    &__box{
+        margin-left: 80px;
+        @media #{$xl} {
+            margin-left: 40px;
+        }
+        @media #{$lg,$md,$sm,$xs} {
+            margin: 0;
+        }
+        & ul{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            & li{
+                list-style: none;
+                padding: 30px 40px;
+                line-height: 1;
+                position: relative;
+                border: 1px solid #EAEAEA;
+                margin-left: -1px;
+                margin-top: -1px;
+                z-index: 1;
+                text-align: center;
+                @media #{$lg,$xs} {
+                    padding: 30px 20px;
+                }
+                &:nth-child(n) {
+                    margin-left: 0;
+                    border-left: none;
+                    text-align: start;
+                  }
+                &:nth-child(-n+2){
+                    margin-top: 0;
+                    border-top: none;
+                    @media #{$md} {
+                        margin-left: 50px;
+                    }
+                }
+                &:nth-child(n+2) {
+                    border-bottom: none;
+                  }
+                &:nth-child(2n) {
+                    border-right: none;
+                    padding-left: 85px;
+                    @media #{$lg} {
+                        padding-left: 40px;
+                    }
+                    @media #{$xs} {
+                        padding-left: 15px;
+                    }
+                  }
+
+                &:nth-child(n+3) {
+                    padding-top: 20px;
+                    @media #{$md} {
+                        padding-left: 90px;
+                    }
+                  }
+                &:nth-child(4n) {
+                    padding-left: 90px;
+                    padding-top: 20px;
+                    @media #{$lg,$sm} {
+                        padding-left: 40px;
+                    }
+                    @media #{$md} {
+                        padding-left: 90px;
+                    }
+                    @media #{$xs} {
+                        padding-left: 15px;
+                    }
+                  }
+            }
+        }
+    }
+
+}
+// end counter-3 area
+

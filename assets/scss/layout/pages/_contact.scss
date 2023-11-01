@@ -1,0 +1,113 @@
+@use '../../utils' as *;
+
+.tp-contact-inner{
+    & p{
+        font-size: 18px;
+        line-height: 1.5;
+        margin-bottom: 70px;
+    }
+    &-title{
+        font-size: 60px;
+        margin-bottom: 20px;
+        font-weight: 500;
+    }
+}
+.tp-contact-item{
+    @media #{$sm,$xs} {
+        margin-bottom: 30px;
+    }
+    & span{
+        font-size: 18px;
+        line-height: 1.5;
+        color: #000;
+        margin-bottom: 20px;
+        display: block;
+        @media #{$sm,$xs} {
+            margin: 0;
+        }
+    }
+    & a{
+        font-size: 18px;
+        display: block;
+        color: var(--tp-common-black);
+        font-weight: 700;
+    }
+}
+.tp-contact{
+    &-form{
+        padding: 52px 66px;
+        background: #F8F8F9;
+        @media #{$xs} {
+            padding: 50px 15px;
+        }
+        &-content{
+            & h4{
+                font-size: 34px;
+            }
+            & p{
+                font-size: 16px;
+                line-height: 3;
+                margin-right: 60px;
+                display: block;
+                @media #{$lg,$sm,$xs} {
+                    margin: 0;
+                    margin-bottom: 40px;
+                    line-height: 2;
+                }
+            } 
+        }
+
+        &-input{
+            position: relative;
+            & span{
+                font-size: 20px;
+                position: absolute;
+                top: 15px;
+                color: #000;
+            }
+            & input,textarea{
+              border: 0;
+              border-bottom: 1px solid #D4DCE0;
+              background-color: transparent;
+              font-size: 18px;
+              color: var(--tp-common-black);
+              padding-left: 39px;
+              &::placeholder{
+                font-size: 18px;
+                color: #83827F;
+                }
+            }
+        }
+        &-textarea{
+            & textarea{
+                height: 150px;
+                resize: none;
+                border: 0;
+                background: none;
+                border-bottom: 1px solid #D4DCE0;
+                padding: 15px 20px 0 39px;
+            }
+            & span{
+                font-size: 20px;
+                
+            }
+        }
+    }
+    &-social-icon{
+        & a{
+            display: inline-block;
+            color: #9497A3;
+            border: 1px solid rgba(44, 46, 52, 0.09);
+            transition: .3s;
+            @media #{$lg} {
+                margin: 0;
+            }
+            @media #{$md} {
+                margin-right: 14px;
+            }
+            &:hover i{
+                color: #000;
+            }
+        }
+    }
+}

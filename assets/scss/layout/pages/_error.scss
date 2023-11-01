@@ -1,0 +1,12 @@
+@use '../../utils' as *;
+
+.tp-error{
+    &-count {
+        font-size: 300px;
+    }
+    &-title {
+        font-size: 60px;
+        text-transform: capitalize;
+        margin-bottom: 70px;
+    }
+}

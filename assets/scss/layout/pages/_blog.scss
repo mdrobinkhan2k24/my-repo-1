@@ -1,0 +1,144 @@
+@use "../../utils" as *;
+
+// ******** Welcome To TP Widox Blog area **************
+.tp__blog {
+  &-button {
+    float: right;
+    @media #{$xs} {
+      display: none;
+  }
+    & a {
+      margin-top: -65px;
+    }
+  }
+}
+.tp-blog{
+  &-title{
+    &__wrapper{
+      .blog-section-title{
+        @media #{$sm} {
+          font-size: 43px;
+        }
+      }
+    }
+  }
+  &__item{
+    transition: .3s;
+    &:hover{
+      & .tp-blog{
+        &__tag{
+          opacity: 1; 
+          visibility: visible;
+        }
+      }
+      & .tp-blog{
+        &__thumb{
+          & img{
+            transform:  scale(1.17) rotate(0deg);
+  
+          }
+        }
+      }
+    }
+  }
+  &__thumb{
+    & img{
+         transition: all 0.4s ease-out 0s;
+    }
+  }
+  &__tag{
+    position: absolute;
+    background: #fff;
+    padding: 15px 20px;
+    font-size: 14px;
+    text-transform: uppercase;
+    bottom: -8px;
+    opacity: 0;
+    visibility: hidden;
+    transition: .3s;
+    &:hover{
+      background-color: var(--tp-theme-primary);
+      color: var(--tp-heading-primary);
+    }
+  }
+  &__title{
+    font-size: 22px;
+    font-weight: 500;
+    text-transform: capitalize;
+    color: var(--tp-heading-primary);
+    transition: .3s;
+    @media #{$lg} {
+      font-size: 18px;
+  }
+    @media #{$md} {
+      font-size: 20px;
+  }
+  &:hover > a{
+    color: var(--tp-theme-primary);
+  }
+  }
+  &__meta{
+    & span{
+      opacity: 0.6;
+      font-size: 16px;
+      font-weight: 500;
+      color: var(--tp-heading-primary);
+    }
+  }
+
+}
+.xs-blog-btn{
+  @media #{$xs} {
+    display: block;
+  }
+}
+
+// start blog 3 area 
+.tp-blog-3{
+  &__content{
+    & .tp-blog__date{
+      width: 7px;
+      height: 7px;
+      background: var(--tp-theme-primary);
+      border-radius: 50%;
+    }
+  }
+  &__title{
+    font-size: 31px;
+    font-weight: 600;
+    @media #{$lg} {
+      font-size: 26px;
+    }
+    @media #{$md,$xs} {
+      font-size: 18px;
+    }
+  }
+  &__meta{
+    @media #{$md,$xs} {
+      margin-bottom: 10px;
+    }
+    & span{
+      font-size: 20px;
+      @media #{$md,$xs} {
+        font-size: 16px;
+      }
+    }
+  }
+  &__button{
+    position: absolute;
+    top: 40%;
+    left: 0;
+    right: 0;
+    text-align: center;
+    margin: auto;
+    visibility: hidden;
+    opacity: 0;
+  }
+  &__item{
+    &:hover button{
+      visibility: visible;
+      opacity: 1;
+    }
+  }
+}
+// end blog 3 area 

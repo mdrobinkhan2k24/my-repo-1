@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html class="no-js" lang="zxx">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>Widox - chackout Page</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Place favicon.ico in the root directory -->
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="assets/img/logo/main-logo.png"
+    />
+
+    <!-- CSS here -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/animate.css" />
+    <link rel="stylesheet" href="assets/css/swiper-bundle.css" />
+    <link rel="stylesheet" href="assets/css/slick.css" />
+    <link rel="stylesheet" href="assets/css/magnific-popup.css" />
+    <link rel="stylesheet" href="assets/css/font-awesome-pro.css" />
+    <link rel="stylesheet" href="assets/css/flaticon_shofy.css" />
+    <link rel="stylesheet" href="assets/css/spacing.css" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+  </head>
+  <body>
+    <!-- pre loader area start -->
+    <div id="loading">
+      <div id="loading-center">
+          <div id="loading-center-absolute">
+            <!-- loading content here -->
+            <div class="tp-preloader-content">
+                <div class="tp-preloader-logo">
+                  <div class="tp-preloader-circle">
+                      <svg width="190" height="190" viewBox="0 0 380 380" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle stroke="#D9D9D9" cx="190" cy="190" r="180" stroke-width="6" stroke-linecap="round">
+                        </circle>
+                        <circle stroke="red" cx="190" cy="190" r="180" stroke-width="6" stroke-linecap="round"></circle>
+                      </svg>
+                  </div>
+                  <img src="assets/img/logo/preloader/preloader-icon.png" alt="">
+                </div>
+                <p class="tp-preloader-subtitle">Loading...</p>
+            </div>
+          </div>
+      </div>
+    </div>
+    <!-- pre loader area end -->
+
+    <!-- back to top Start  -->
+    <div class="back-to-top-wrapper">
+      <button id="back_to_top" type="button" class="back-to-top-btn">
+          <svg width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M11 6L6 1L1 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+          </svg>               
+      </button>
+    </div>
+    <!-- back to top Start  -->
+
+    <!-- offcanvas area start -->
+    <div class="offcanvas__area">
+      <div class="offcanvas__wrapper">
+        <div class="offcanvas__close">
+            <button class="offcanvas__close-btn offcanvas-close-btn">
+              <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M11 1L1 11" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M1 1L11 11" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </button>
+        </div>
+        <div class="offcanvas__content">
+            <div class="offcanvas__top mb-70 d-flex justify-content-between align-items-center">
+              <div class="offcanvas__logo logo">
+                  <a href="index.html">
+                    <img src="assets/img/logo/main-logo.png" alt="logo">
+                  </a>
+              </div>
+            </div>
+            <div class="tp-main-menu-mobile"></div>
+            <div class="offcanvas__btn mt-20 mb-30">
+              <a href="contact.html" class="tp-btn">Getting Started 
+                <i class="fa-regular fa-chevron-right"></i>
+              </a>
+            </div>
+            <div class="side-info-contact mb-10">
+              <span>we are here</span>
+              <p>New South Head
+               <br>Rd, Double Bay<br>NSW 2028, New York</p>
+            </div>
+            <div class="side-info-social tp-footer-widget__social">
+              <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+              <a href="#"><i class="fa-brands fa-twitter"></i></a>
+              <a href="#"><i class="fa-brands fa-pinterest-p"></i></a>
+              <a href="#"><i class="fa-solid fa-paper-plane"></i></a>
+            </div>
+        </div>
+      </div>
+    </div>
+    <div class="body-overlay"></div>
+    <!-- offcanvas area end -->
+      
+    <!--  Header Area-->
+    <header>
+        <div class="header__area">
+          <div id="header-sticky" class="header__menu-wrap">
+            <div class="container-fluid">
+              <div class="row align-items-center">
+                <div class="col-xxl-3 col-xl-3 col-lg-2 col-md-6 col-sm-6 d-flex align-items-center">
+                  <div class="tp-menu__bar d-md-none d-xl-inline-block">
+                    <div class="tp-menu__content d-sm-block offcanvas-open-btn">
+                      <a href="#">
+                        <svg width="19" height="12" viewBox="0 0 19 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <rect width="19" height="1.5" fill="currentColor"></rect>
+                          <rect y="5" width="19" height="1.5" fill="currentColor"></rect>
+                          <rect y="10" width="19" height="1.5" fill="currentColor"></rect>
+                          </svg>
+                      </a>
+                      <span>Menu</span>
+                    </div>
+                  </div>
+                  <div class="tp-main__logo tp-main__logo-2 ml-20">
+                    <a href="index.html">
+                      <img src="assets/img/logo/main-logo.png" alt="">
+                    </a>
+                  </div>
+                </div>
+                <div class="col-xxl-6 col-xl-6 col-lg-7 col-md-6 d-sm-none d-lg-block">
+                  <div class="main-menu main-menu-2 menu-position d-md-none d-lg-inline-block">
+                    <nav id="mobile-menu" class="tp-main-menu-content" style="display: block;">
+                      <ul>
+                        <li class="has-dropdown tp-header-box"><a href="#">Home</a>
+                          <div class="tp-submenu has-homemenu">
+                            <div class="row gx-6 row-cols-1 row-cols-md-2 row-cols-xl-3">
+                              <div class="col homemenu active">
+                                <div class="homemenu-thumb">
+                                  <img src="assets/img/menu/home-1.jpg" alt="">
+                                </div>
+                                <div class="homemenu-btn">
+                                  <a class="tp-btn menu-btn mb-5" href="index.html">Multi Page</a>
+                                  <a class="tp-btn menu-btn" href="index-one-page.html">One Page</a>
+                               </div>
+                               <div class="demo-name text-center">
+                                <span>Home 01</span>
+                               </div>
+                              </div>
+                              <div class="col homemenu active">
+                                <div class="homemenu-thumb">
+                                  <img src="assets/img/menu/home-1.jpg" alt="">
+                                </div>
+                                <div class="homemenu-btn">
+                                  <a class="tp-btn menu-btn mb-5" href="index-2.html">Multi Page</a>
+                                  <a class="tp-btn menu-btn" href="index-one-page.html">One Page</a>
+                               </div>
+                               <div class="demo-name text-center">
+                                <span>Home 02</span>
+                               </div>
+                              </div>
+                              <div class="col homemenu active">
+                                <div class="homemenu-thumb">
+                                  <img src="assets/img/menu/home-1.jpg" alt="">
+                                </div>
+                                <div class="homemenu-btn">
+                                  <a class="tp-btn menu-btn mb-5" href="index-3.html">Multi Page</a>
+                                  <a class="tp-btn menu-btn" href="index-one-page.html">One Page</a>
+                               </div>
+                               <div class="demo-name text-center">
+                                <span>Home 03</span>
+                               </div>
+                              </div>
+                            </div>
+                          </div>
+                        </li>
+                        <li class="has-dropdown">
+                          <a href="#">pages</a>
+                          <ul class="tp-submenu">
+                            <li><a href="index-2.html">Home-2</a></li>
+                            <li><a href="index-3.html">Home-3</a></li>
+                            <li><a href="#">Home-4</a></li>
+                            <li><a href="#">Home-5</a></li>
+                            <li><a href="#">Home-6</a></li>
+                          </ul>
+                        </li>
+                        <li><a href="service.html">services</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                        <li><a href="news.html">news</a></li>
+                        <li><a href="contuct.html">contact</a></li>
+                      </ul>
+                    </nav>
+                  </div>
+                </div>
+                <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-6 col-sm-6">
+                  <div class="tp-header__menu-right d-flex justify-content-end align-items-center">
+                    <div class="tp-header__shop">
+                      <ul>
+                        <li><a href="javascript:void(0);" class="tp-header__search d-md-block"><i class="fa-sharp fa-regular fa-magnifying-glass"></i></a></li>
+                        <li><a href="#" class="tp-header__shop-icon d-lg-none d-xxl-block">Cart <span>0</span></a></li>
+                      </ul>
+                    </div>
+                    <div class="tp-header__right-btn d-flex align-items-center">
+                      <a href="#" class="gray-btn d-sm-none d-lg-inline-block">Get quate now</a>
+                      <div class="tp-menu__content tp-mobile-bars offcanvas-btn">
+                        <button class="offcanvas-open-btn d-md-block d-lg-none">
+                         <i class="fa-solid fa-bars-staggered"></i>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        </div>
+    </header>
+    <!--  End Header Area-->
+    <main>
+      <!--  start BreadCumb Area-->
+      <section class="tp-breadcrumb-area grey-bg pt-110 pb-110">
+        <div class="container">
+          <div class="row">
+            <div class="col-xl-12">
+              <div class="tp-breadcrumb text-center">
+                <div class="tp-breadcrumb__list">
+                  <span><a href="home">Home</a></span>
+                  <span>\ Checkout Page</span>
+              </div>
+                <h2 class="tp-breadcrumb__title">Checkout Page</h2>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--  End BreadCumb Area-->
+
+      <!-- start checkout area  -->
+      <section class="tp-checkout-area tp-product-info pt-120 pb-120">
+        <div class="container">
+          <div class="row">
+              <div class="col-xl-7 col-lg-7">
+                <div class="tp-checkout-verify mb-65">
+                  <div class="tp-checkout-verify-item">
+                      <p class="tp-checkout-verify-reveal">Returning customer? <button type="button" class="tp-checkout-login-form-reveal-btn">Click here to login</button>
+                      </p>
+                      <div id="tpReturnCustomerLoginForm" class="tp-return-customer">
+                        <form action="#">
+                            <div class="tp-return-customer-input">
+                              <label>Email</label>
+                              <input type="text" placeholder="Your Email">
+                            </div>
+                            <div class="tp-return-customer-input">
+                              <label>Password</label>
+                              <input type="password" placeholder="Password">
+                            </div>
+                            <div class="tp-return-customer-suggetions d-sm-flex align-items-center justify-content-between mb-20">
+                              <div class="tp-return-customer-remeber">
+                                  <input id="remeber" type="checkbox">
+                                  <label for="remeber">Remember me</label>
+                              </div>
+                              <div class="tp-return-customer-forgot">
+                                  <a href="forgot.html">Forgot Password?</a>
+                              </div>
+                            </div>
+                            <button type="submit" class="tp-return-customer-btn tp-checkout-btn">Login</button>
+                        </form>
+                      </div>
+                  </div>
+                  <div class="tp-checkout-verify-item">
+                      <p class="tp-checkout-verify-reveal">Have a coupon? <button type="button"      class="tp-checkout-coupon-form-reveal-btn">Click here to enter your code</button>
+                      </p>
+                      <div id="tpCheckoutCouponForm" class="tp-return-customer">
+                        <form action="#">
+                            <div class="tp-return-customer-input">
+                              <label>Coupon Code :</label>
+                              <input type="text" placeholder="Coupon">
+                            </div>
+                            <button type="submit" class="tp-return-customer-btn tp-checkout-btn">Apply</button>
+                        </form>
+                      </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-7">
+                <div class="tp-checkout-bill-area mb-50">
+                    <h3 class="tp-checkout-bill-title">Billing Details</h3>
+                    <div class="tp-checkout-bill-form">
+                      <form action="#">
+                          <div class="tp-checkout-bill-inner">
+                            <div class="row">
+                                <div class="col-md-6">
+                                  <div class="tp-checkout-input">
+                                      <label>First Name <span>*</span></label>
+                                      <input type="text" placeholder="First Name">
+                                  </div>
+                                </div>
+                                <div class="col-md-6">
+                                  <div class="tp-checkout-input">
+                                      <label>Last Name <span>*</span></label>
+                                      <input type="text" placeholder="Last Name">
+                                  </div>
+                                </div>
+                                <div class="col-md-12">
+                                  <div class="tp-checkout-input">
+                                      <label>Company name (optional)</label>
+                                      <input type="text" placeholder="Example LTD.">
+                                  </div>
+                                </div>
+                                <div class="col-md-12">
+                                  <div class="tp-checkout-input">
+                                      <label>Country / Region </label>
+                                      <input type="text" placeholder="United States (US)">
+                                  </div>
+                                </div>
+                                <div class="col-md-12">
+                                  <div class="tp-checkout-input">
+                                      <label>Street address</label>
+                                      <input type="text" placeholder="House number and street name">
+                                  </div>
+
+                                  <div class="tp-checkout-input">
+                                      <input type="text" placeholder="Apartment, suite, unit, etc. (optional)">
+                                  </div>
+                                </div>
+                                <div class="col-md-12">
+                                  <div class="tp-checkout-input">
+                                      <label>Town / City</label>
+                                      <input type="text" placeholder="">
+                                  </div>
+                                </div>
+                                <div class="col-md-6">
+                                  <div class="tp-checkout-input">
+                                      <label>State / County</label>
+                                      <select style="display: none;">
+                                        <option>New York US</option>
+                                        <option>Berlin Germany</option>
+                                        <option>Paris France</option>
+                                        <option>Tokiyo Japan</option>
+                                      </select><div class="nice-select" tabindex="0"><span class="current">New York US</span><ul class="list"><li data-value="New York US" class="option selected">New York US</li><li data-value="Berlin Germany" class="option">Berlin Germany</li><li data-value="Paris France" class="option">Paris France</li><li data-value="Tokiyo Japan" class="option">Tokiyo Japan</li></ul></div>
+                                  </div>
+                                </div>
+                                <div class="col-md-6">
+                                  <div class="tp-checkout-input">
+                                      <label>Postcode ZIP</label>
+                                      <input type="text" placeholder="">
+                                  </div>
+                                </div>
+                                <div class="col-md-12">
+                                  <div class="tp-checkout-input">
+                                      <label>Phone <span>*</span></label>
+                                      <input type="text" placeholder="">
+                                  </div>
+                                </div>
+                                <div class="col-md-12">
+                                  <div class="tp-checkout-input">
+                                      <label>Email address <span>*</span></label>
+                                      <input type="email" placeholder="">
+                                  </div>
+                                </div>
+                                <div class="col-md-12">
+                                  <div class="tp-checkout-option-wrapper">
+                                      <div class="tp-checkout-option">
+                                        <input id="create_free_account" type="checkbox">
+                                        <label for="create_free_account">Create an account?</label>
+                                      </div>
+                                      <div class="tp-checkout-option">
+                                        <input id="ship_to_diff_address" type="checkbox">
+                                        <label for="ship_to_diff_address">Ship to a different address?</label>
+                                      </div>
+                                  </div>
+                                </div>
+                                <div class="col-md-12">
+                                  <div class="tp-checkout-input">
+                                      <label>Order notes (optional)</label>
+                                      <textarea placeholder="Notes about your order, e.g. special notes for delivery."></textarea>
+                                  </div>
+                                </div>
+                            </div>
+                          </div>
+                      </form>
+                    </div>
+                </div>
+              </div>
+              <div class="col-lg-5">
+                <!-- checkout place order -->
+                <div class="tp-checkout-place">
+                    <h3 class="tp-checkout-place-title">Your Order</h3>
+                    <div class="tp-order-info-list">
+                      <ul>
+                          <!-- header -->
+                          <li class="tp-order-info-list-header">
+                            <h4>Product</h4>
+                            <h4>Total</h4>
+                          </li>
+                          <!-- item list -->
+                          <li class="tp-order-info-list-desc">
+                            <p>Solid Wooden Door <span> x 2</span></p>
+                            <span>£318.00</span>
+                          </li>
+                          <li class="tp-order-info-list-desc">
+                            <p>Plain Veneered Flush Door <span> x 1</span></p>
+                            <span>£12.00</span>
+                          </li>
+                          <li class="tp-order-info-list-desc">
+                            <p>Knock-Down Door Frame  <span> x 3</span></p>
+                            <span>£954.00</span>
+                          </li>
+                          <li class="tp-order-info-list-desc">
+                            <p>Body Works Mens Collection <span> x 1</span></p>
+                            <span>$145:00</span>
+                          </li>
+                          <!-- subtotal -->
+                          <li class="tp-order-info-list-subtotal">
+                            <span>Subtotal</span>
+                            <span>$507.00</span>
+                          </li>
+                          <!-- shipping -->
+                          <li class="tp-order-info-list-shipping">
+                            <span>Shipping</span>
+                            <div class="tp-order-info-list-shipping-item d-flex flex-column align-items-end">
+                                <span>
+                                  <input id="flat_rate" type="radio" name="shipping">
+                                  <label for="flat_rate">Flat rate: <span>$20.00</span></label>
+                                </span>
+                                <span>
+                                  <input id="local_pickup" type="radio" name="shipping">
+                                  <label for="local_pickup">Local pickup: <span>$25.00</span></label>
+                                </span>
+                                <span>
+                                  <input id="free_shipping" type="radio" name="shipping">
+                                  <label for="free_shipping">Free shipping</label>
+                                </span>
+                            </div>
+                          </li>
+                          <!-- total -->
+                          <li class="tp-order-info-list-total">
+                            <span>Total</span>
+                            <span>$1,476.00</span>
+                          </li>
+                      </ul>
+                    </div>
+                    <div class="tp-checkout-payment">
+                      <div class="tp-checkout-payment-item">
+                          <input type="radio" id="back_transfer" name="payment">
+                          <label for="back_transfer" data-bs-toggle="direct-bank-transfer">Direct Bank Transfer</label>
+                          <div class="tp-checkout-payment-desc direct-bank-transfer">
+                            <p>Make your payment directly into our bank account. Please use your Order ID as the payment reference. Your order will not be shipped until the funds have cleared in our account.</p>
+                          </div>
+                      </div>
+                      <div class="tp-checkout-payment-item">
+                          <input type="radio" id="cheque_payment" name="payment">
+                          <label for="cheque_payment">Cheque Payment</label>
+                          <div class="tp-checkout-payment-desc cheque-payment">
+                            <p>Make your payment directly into our bank account. Please use your Order ID as the payment reference. Your order will not be shipped until the funds have cleared in our account.</p>
+                          </div>
+                      </div>
+                      <div class="tp-checkout-payment-item">
+                          <input type="radio" id="cod" name="payment">
+                          <label for="cod">Cash on Delivery</label>
+                          <div class="tp-checkout-payment-desc cash-on-delivery">
+                            <p>Make your payment directly into our bank account. Please use your Order ID as the payment reference. Your order will not be shipped until the funds have cleared in our account.</p>
+                          </div>
+                      </div>
+                      <div class="tp-checkout-payment-item paypal-payment">
+                          <input type="radio" id="paypal" name="payment">
+                          <label for="paypal">PayPal
+                            <img src="assets/img/icon/payment-option.png" alt="">
+                            <a href="#">What is PayPal?</a>
+                          </label>
+                      </div>
+                    </div>
+                    <div class="tp-checkout-agree">
+                      <div class="tp-checkout-option">
+                          <input id="read_all" type="checkbox">
+                          <label for="read_all">I have read and agree to the website.</label>
+                      </div>
+                    </div>
+                    <div class="tp-checkout-btn-wrapper">
+                      <a href="#" class="tp-checkout-btn w-100">Place Order</a>
+                    </div>
+                </div>
+              </div>
+          </div>
+        </div>
+      </section>
+      <!-- end checkout area  -->
+
+    <!-- start cta-2 inner -->
+      <section class="tp-cta__area black-bg-2 pt-40 fix ">
+        <div class="container">
+          <div class="tp-cta__content p-relative text-center fix">
+            <div class="tp-scroll-hr">
+              <div class="tp-scroll-wrap">
+                <h3 class="tp-cta__title">Schedule A Free Consultation for Window and Door Replacement</h3>
+              </div>
+            </div>
+            <div class="get__schedule">
+              <a class="wow zoomIn" data-wow-duration=".8s" data-wow-delay=".5s" href="#" style="visibility: visible; animation-duration: 0.8s; animation-delay: 0.5s; animation-name: zoomIn;">Get<br>Schedule Now</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    
+    <!--  start footer Area-->
+    <section class="tp-foote-area black-bg-2 pt-15 pb-20">
+      <div class="tp-footer-main pt-120 pt-120">
+        <div class="container">
+          <div class="row">
+            <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-3">
+              <div class="tp-footer-widget tp-footer-col-1">
+                <div class="tp-footer-widget__logo mb-30 wow fadeInUp" data-wow-duration=".8s" data-wow-delay=".5s" style="visibility: visible; animation-duration: 0.8s; animation-delay: 0.5s; animation-name: fadeInUp;">
+                  <a href="index.html"><img src="assets/img/footer/footer-logo.png" alt=""></a>
+                </div>
+                <div class="tp-footer-widget__content mb-20">
+                  <div class="tp-footer-widget__info wow fadeInUp" data-wow-duration=".8s" data-wow-delay=".5s" style="visibility: visible; animation-duration: 0.8s; animation-delay: 0.5s; animation-name: fadeInUp;">
+                    <p>Bjørn is an award UI/UX designs
+                      and branding agency based in
+                      New York, USA.</p>
+                    <div class="tp-footer-widget__social mt-30 wow fadeInUp" data-wow-duration=".8s" data-wow-delay=".5s" style="visibility: visible; animation-duration: 0.8s; animation-delay: 0.5s; animation-name: fadeInUp;">
+                      <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                      <a href="#"><i class="fa-brands fa-vimeo-v"></i></a>
+                      <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                      <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    </div>  
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-3">
+              <div class="tp-footer-widget tp-footer-col-2 ml-60">
+                <div class="tp-footer-widget__content mb-20">
+                  <h3 class="tp-footer-widget__title mb-30 wow fadeInUp" data-wow-duration=".8s" data-wow-delay=".5s" style="visibility: visible; animation-duration: 0.8s; animation-delay: 0.5s; animation-name: fadeInUp;">Our Links</h3>
+                  <ul class="tp-footer-widget__link wow fadeInUp" data-wow-duration=".9s" data-wow-delay=".6s" style="visibility: visible; animation-duration: 0.9s; animation-delay: 0.6s; animation-name: fadeInUp;">
+                    <li><a href="#" class="hov-animi-2">Home</a></li>
+                    <li><a href="#" class="hov-animi-2">Services</a></li>
+                    <li><a href="#" class="hov-animi-2">About Us</a></li>
+                    <li><a href="#" class="hov-animi-2">Features</a></li>
+                    <li><a href="#" class="hov-animi-2">Contacts</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-3">
+              <div class="tp-footer-widget tp-footer-col-3 ml-20">
+                <h3 class="tp-footer-widget__title mb-30 wow fadeInUp" data-wow-duration=".8s" data-wow-delay=".5s" style="visibility: visible; animation-duration: 0.8s; animation-delay: 0.5s; animation-name: fadeInUp;">Find It Fast</h3>
+                <div class="tp-footer-widget__content mb-20">
+                  <ul class="tp-footer-widget__link wow fadeInUp" data-wow-duration=".9s" data-wow-delay=".6s" style="visibility: visible; animation-duration: 0.9s; animation-delay: 0.6s; animation-name: fadeInUp;">
+                    <li><a href="#" class="hov-animi-2">Features</a></li>
+                    <li><a href="#" class="hov-animi-2">Team Member</a></li>
+                    <li><a href="#" class="hov-animi-2">Our Careers</a></li>
+                    <li><a href="#" class="hov-animi-2">Login Here</a></li>
+                    <li><a href="#" class="hov-animi-2">Registered</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-3">
+              <div class="tp-footer-widget tp-footer-col-4 ml-10">
+                <div class="tp-footer-widget__content mb-20">
+                  <div class="tp-footer-widget__info wow fadeInUp" data-wow-duration=".8s" data-wow-delay=".5s" style="visibility: visible; animation-duration: 0.8s; animation-delay: 0.5s; animation-name: fadeInUp;">
+                    <p><a href="#">New South Head Rd, Double Bay NSW 2028, New York</a></p>
+                    <div class="tp-footer-widget__mail mt-30">
+                      <a href="mailto:contact@bjorn.com">contact@bjorn.com</a>
+                      <span><a href="tel:1300877503">+1300 877 503</a></span>
+                    </div>  
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="tpfooter-bottom-area pt-120">
+        <div class="container">
+          <div class="tp-footer-bottom__wrap">
+            <div class="row">
+              <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-12">
+                <div class="tp-footer-bottom__copyright">
+                  <span>Made with ❤️ by <a href="https://themeforest.net/user/hixstudio/portfolio" target="_blank">Themepure.</a> - Powered by Theme</span>
+                </div>
+              </div>
+              <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-12">
+                <div class="tp-footer-bottom__right">
+                  <ul class="tp-footer-bottom__privacy d-flex align-items-end">
+                    <li><a href="#">Style Guide</a></li>
+                    <li><a href="#">Licensing</a></li>
+                    <li><a href="#">Instruction</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--  End footer Area-->
+
+    <!-- JS here -->
+    <script src="assets/js/vendor/jquery-3.7.1.min.js"></script>
+    <script src="assets/js/vendor/waypoints.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/meanmenu.js"></script>
+    <script src="assets/js/slick.js"></script>
+    <script src="assets/js/magnific-popup.js"></script>
+    <script src="assets/js/nice-select.js"></script>
+    <script src="assets/js/purecounter.js"></script>
+    <script src="assets/js/parallax.js"></script>
+    <script src="assets/js/countdown.js"></script>
+    <script src="assets/js/wow.js"></script>
+    <script src="assets/js/isotope-pkgd.js"></script>
+    <script src="assets/js/range-slider.js"></script>
+    <script src="assets/js/imagesloaded-pkgd.js"></script>
+    <script src="assets/js/swiper-bundle.js"></script>
+    <script src="assets/js/ajax-form.js"></script>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>

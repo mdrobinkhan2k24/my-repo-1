@@ -1,0 +1,358 @@
+@use '../utils' as *;
+
+/*----------------------------------------*/
+/*  2.15 Section Title
+/*----------------------------------------*/
+
+.#{$theme-prifix}-section {
+    &-title{
+        @extend %tp-ff-roboto;
+        font-size: 36px;
+        color: var(--tp-heading-secondary);
+        position: relative;
+        z-index: 1;
+
+        @media #{$xl}{
+            font-size: 45px;
+        }
+
+        @media #{$lg}{
+            font-size: 35px;
+        }
+
+        @media #{$md, $sm, $xs}{
+            font-size: 30px;
+        }
+
+        & svg{
+            position: absolute;
+            left: 0;
+            bottom: -12px;
+            z-index: -1;
+            & path{
+                stroke: var(--tp-pink-3);
+            }
+        }
+
+        &-sm{
+            font-size: 24px;
+
+            & svg{
+                left: -3px;
+                bottom: -3px;
+            }
+        }
+
+        &-pre{
+            font-size: 14px;
+            font-weight: var(--tp-fw-bold);
+            color: var(--tp-theme-primary);
+            display: inline-block;
+            text-transform: uppercase;
+        }
+    }
+}
+
+.#{$theme-prifix}-section{
+    &-title-2{
+        font-weight: 500;
+        font-size: 44px;
+        
+        @media #{$xs}{
+            font-size: 35px;
+        }
+    }
+    &-title-pre-2{
+        font-weight: 400;
+        font-size: 18px;        
+        color: var(--tp-theme-secondary);
+        position: relative;
+        z-index: 1;
+        display: inline-block;
+        & svg{
+            position: absolute;
+            bottom: -8px;
+            left: 26px;
+            z-index: -1;
+        }
+    }
+}
+
+.#{$theme-prifix}-section{
+    &-title-3{
+        font-weight: 500;
+        font-size: 44px;      
+        @media #{$xs}{
+            font-size: 35px;
+        }
+    }
+    &-title-pre-3{
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 14px;      
+        color: var(--tp-theme-brown);
+        display: inline-block;
+    }
+}
+
+.#{$theme-prifix}-section{
+    &-title-wrapper-4{
+        & p{
+            font-size: 18px;
+        }
+    }
+    &-title-4{
+        font-weight: 500;
+        font-size: 44px;
+        line-height: 1.12;
+        margin-bottom: 5px;
+        @media #{$xs}{
+            font-size: 35px;
+        }
+        &.fz-50{
+            font-size: 50px;
+
+            @media #{$lg}{
+                font-size: 33px;
+            }
+
+            @media #{$xs}{
+                font-size: 41px;
+            }
+        }
+    }
+    &-title-pre-4{
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 14px; 
+        color: var(--tp-theme-brown);
+        display: inline-block;
+        margin-bottom: 11px;
+    }
+    
+}
+
+
+.#{$theme-prifix}-section{
+    &-title-5{
+        font-weight: 500;
+        font-size: 44px;
+        
+        @media #{$sm}{
+            font-size: 40px;
+        }
+        
+        @media #{$xs}{
+            font-size: 35px;
+        }
+    }
+    &-title-pre-5{
+        font-weight: 400;
+        font-size: 18px;        
+        color: var(--tp-theme-green);
+        position: relative;
+        z-index: 1;
+        display: inline-block;
+        margin-bottom: 12px;
+        & svg{
+            position: absolute;
+            bottom: -8px;
+            left: 26px;
+            z-index: -1;
+        }
+
+        &.has-mb-0{
+            margin-bottom: 0;
+        }
+    }
+}
+
+.#{$theme-prifix}-section{
+    &-title-6{
+        font-size: 44px;
+        font-weight: 500;
+        position: relative;
+        z-index: 1;
+
+        @media #{$xl}{
+            font-size: 45px;
+        }
+
+        @media #{$lg}{
+            font-size: 35px;
+        }
+
+        @media #{$md, $sm, $xs}{
+            font-size: 30px;
+        }
+
+
+    }
+    &-title-pre-6{
+        font-size: 18px;
+        color: var(--tp-theme-primary);
+        display: inline-block;
+        text-transform: capitalize;
+    }
+}
+
+.#{$theme-prifix}-section{
+    &-title-7{
+        font-size: 50px;
+        font-weight: 500;
+        line-height: 1.07;
+        position: relative;
+        z-index: 1;
+
+        @media #{$xl}{
+            font-size: 45px;
+        }
+
+        @media #{$lg}{
+            font-size: 35px;
+        }
+
+        @media #{$md, $sm, $xs}{
+            font-size: 30px;
+        }
+
+
+    }
+    &-title-pre-7{
+        font-size: 20px;
+        color: var(--tp-theme-primary);
+        display: inline-block;
+        text-transform: capitalize;
+        font-weight: 400;
+        margin-bottom: 10px;
+    }
+}
+// .section{
+//     &__title-wrapper{
+//         margin-bottom: 60px;
+//         display: block;
+//     }
+// }
+.section{
+    &__title {
+        font-size: 58px;
+        text-transform: capitalize;
+        line-height: 1.06;
+        @media #{$xl} {
+            font-size: 50px;
+        }
+        @media #{$lg} {
+            font-size: 49px;
+        }
+        @media #{$md} {
+            font-size: 35px;
+            line-height: 1.2;
+        }
+        @media #{$sm} {
+            font-size: 40px;
+            line-height: 1.2;
+        }
+        @media #{$xs} {
+            font-size: 30px;
+            line-height: 40px;
+        }
+        &.service-section-title{
+            @media #{$xs} {
+                font-size: 28px;
+                line-height: 1.1;
+            }
+          }
+        &.portfolio-section-title{
+            @media #{$xs} {
+                font-size: 24px;
+                line-height: 1;
+                padding-top: 10px;
+            }
+        }
+        &-3{
+            & span, h3{
+                color: #fff;
+            }
+        }
+        &.section-title-3{
+            @media #{$lg} {
+                font-size: 48px;
+            }
+            @media #{$md} {
+                font-size: 34px;
+            }
+            @media #{$sm} {
+                font-size: 25px;
+                line-height: 1;
+            }
+        }
+    }
+    &__title-2{
+        @media #{$lg} {
+            font-size: 48px;
+        }
+    }
+    &__title-pre {
+        position: relative;
+        color: #000;
+        font-size: 16px;
+        text-transform: uppercase;
+        font-weight: 600;
+        display: inline-block;
+        padding-left: 10px;
+        letter-spacing: 1px;
+        margin-bottom: 10px;
+        @media #{$sm} {
+            bottom: 10px;
+        }
+        @media #{$xs} {
+            font-size: 15px;
+        }
+        &::before {
+            position: absolute;
+            background: var(--tp-theme-primary);
+            width: 1px;
+            height: 13px;
+            content: "";
+            display: inline-block;
+            bottom: 6px;
+            left: 0;
+        }
+        &.section-title-2{
+            color: #fff;
+            margin-bottom: 18px;
+        }
+    }
+    &__title-pre-2{
+        @media #{$sm} {
+            bottom: 10px;
+        }
+    }
+    &__title-wrapper-2{
+        & .section-title{
+            @media #{$lg} {
+                font-size: 48px;
+            }
+        }
+        & .about-title{
+            @media #{$lg} {
+                font-size: 45px;
+            }
+        }
+    }
+    &__title-pre-3{
+        @media #{$sm} {
+            bottom: 10px;
+        }
+    }
+
+}
+
+.about-title-2{
+    @media #{$sm} {
+        font-size: 48px;
+        line-height: 1.2;
+    }
+}
+
+

@@ -1,0 +1,26 @@
+@use '../../utils' as *;
+
+.tp-brand-content {
+	border-bottom: 1px solid #D9D9D9;
+	padding-bottom: 25px;
+}
+.tp-brand-item a {
+	text-align: center;
+	display: block;
+}
+.tp-brand-2{
+	&__content {
+		border-bottom: 1px solid#D9D9D9;
+		padding-bottom: 30px;
+	}
+	&__item {
+		text-align: center;
+		& a{
+			opacity: 25%;
+			transition: .3s;
+			&:hover{
+				opacity: 1;
+			}
+		}
+	}
+}

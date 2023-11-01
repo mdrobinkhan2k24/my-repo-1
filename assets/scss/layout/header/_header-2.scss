@@ -1,0 +1,254 @@
+@use '../../utils' as *;
+/*----------------------------------------*/
+/*  3.2 Header Style 2
+/*----------------------------------------*/
+.tp-main{
+    &__logo-2 {
+        border-left: 1px solid var(--tp-border-secondary);
+        padding: 32px 35px;
+        @media #{$xxl} {
+            margin: 0;
+        }
+        @media #{$xl} {
+            margin: 0;
+            padding: 32px 14px;
+        }
+        @media #{$lg,$md,$sm,$xs} {
+            border: 0;
+            padding: 0;
+        }
+    }
+}
+.header{
+    &__menu-wrap {
+        height: 93px;
+        border-bottom: 1px solid var(--tp-border-secondary);
+        @media #{$xxl,$lg} {
+            padding: 0;
+        }
+        @media #{$md} {
+            height: 71px;
+        }
+        // @media #{$sm} {
+        //     height: 90px;
+        // }
+    }
+}
+.tp-main{
+    &__logo{
+        @media #{$md,$xs,$sm} {
+            margin: 0;
+        }
+        // @media #{$sm} {
+        //     margin: 20px 0 0 0px;
+        // }
+    }
+}
+.tp-menu{
+    &__bar{
+        color: #000;
+        font-size: 20px;
+        text-align: center;
+        padding: 33px 20px;
+        font-weight: 500;
+        @media #{$xl} {
+            padding: 33px 20px;
+        }
+        @media #{$md} {
+            border: 0;
+        }
+        @media #{$xs} {
+            display: none;
+        }
+    }
+    &__content{
+        & a{
+            margin-right: 10px;
+        }
+    }
+    &__bar{
+        @media #{$sm} {
+            display: none;
+        }
+    }
+}
+
+.tp-header{
+    &__menu-right{
+        margin-right: -15px;
+        @media #{$xl} {
+            margin-right: -23px;
+        }
+        @media #{$lg} {
+            margin-left: 0px;
+        }
+        @media #{$md,$sm} {
+            margin-right: 60px;
+        }
+        @media #{$xs} {
+            margin-right: 55px;
+            margin-top: -25px;
+        }
+    }
+    &-search {
+        margin-top: 35px;
+        margin-right: 35px;
+        @media #{$xl,$lg} {
+            margin-top: 10px;
+        }
+        @media #{$md} {
+            margin-top: 26px;
+            margin-right: 26px;
+        }
+        & button{
+            & i{
+                color: var(--tp-heading-primary);
+                font-size: 20px;
+                font-weight: 500;
+                transition: .3s;
+                &:hover{
+                    color: var(--tp-theme-primary);
+                }
+            }
+        }
+    }
+    &__shop{
+        @media #{$xxl} {
+            margin-left: -78px;
+        }
+        @media #{$xl} {
+            margin-left: -122px;
+        }
+        @media #{$md} {
+            margin-left: -130px;
+        }
+        & ul{
+            display: flex;
+            & li{
+                list-style: none;
+                text-align: center;
+                &:hover > a{
+                    color: var(--tp-theme-primary);
+                    &:hover > span{
+                        background-color: var(--tp-theme-primary);
+                    }
+                }
+                & a{
+                    font-size: 18px;
+                    color: var(--tp-heading-primary);
+                    border-left: 1px solid var(--tp-border-secondary);
+                    padding: 32px 34px;
+                    font-weight: 500;
+                    display: inline-block;
+                    & span{
+                        background: #000;
+                        color: #fff;
+                        font-size: 12px;
+                        width: 16px;
+                        height: 16px;
+                        display: inline-block;
+                        line-height: 16px;
+                        border-radius: 50%;
+                        transition: .3s;
+                    }
+                    @media #{$x3l,$lg} {
+                        padding: 32px 30px;
+                    }
+                    @media #{$md} {
+                        padding: 23px 20px;
+                    }
+                    @media #{$xs} {
+                        padding: 0 20px;
+                    }
+                }
+                &:first-child a{
+                    border: 0;
+                    @media #{$sm} {
+                        display: block;
+                        padding: 22px 0;
+                    }
+                }
+                &:last-child a{
+                    @media #{$sm,$xs} {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+    &__right-btn {
+        & .tp-mobile{
+            &-bars{
+                & i{
+                    margin-right: -60px;
+                    color: var(--tp-heading-primary);
+                    font-size: 18px;
+                }
+                @media #{$sm} {
+                    // margin-top: 0px;
+                }
+            }
+            &-bars-3 {
+                @media #{$sm} {
+                    margin: 0;
+                }
+            }
+        }
+    }
+}
+
+// search bar area 
+.tpsearchbar{
+    &__close {
+        color: var(--tp-heading-primary);
+        font-size: 30px;
+        background: var(--tp-theme-primary);
+        width: 35px;
+        height: 35px;
+        position: absolute;
+        top: 15%;
+        right: 15%;
+        &:hover i {
+            transform: rotate(180deg);
+        }
+        & i {
+            transition: all 0.3s 0s ease-out;
+        }
+    }
+    &__title {
+        font-size: 18px;
+        color: var(--tp-heading-primary);
+        text-transform: uppercase;
+        font-weight: 700;
+        margin-bottom: 35px;
+    }
+    &__form {
+        position: relative;
+        & input {
+            width: 100%;
+            height: 60px;
+            border: 1px solid rgba(0, 0, 0, 0.1);
+            padding: 10px 55px 10px 20px;
+            color: var(--tp-heading-primary);
+            font-size: 16px;
+            font-weight: 500;
+          }
+    }
+    &__search{
+        &-btn{
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            right: 25px;
+            font-size: 16px;
+            & i {
+                font-size: 20px;
+                color: var(--tp-heading-primary);
+                transition: .3s;
+                &:hover{
+                    color: var(--tp-theme-primary);
+                }
+            }
+    }
+    }
+}
